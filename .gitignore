@@ -1,0 +1,66 @@
+# Created by https://www.gitignore.io/api/go
+
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+test_build
+daycam-server
+daycam-server.yml
+server_test
+
+# End of https://www.gitignore.io/api/go
+
+# local IDE config
+.idea/
+.vscode/*
+
+# local build
+bin/
+build/
+
+# local config
+configs/dev.yaml
+config/daycam.yaml
+config/daycam.yml
+config/daycam_test.yaml
+config/daycam_test.yml
+config/bench.yaml
+config/bench.yml
+daycam.yaml
+daycam.yml
+daycam_test.yaml
+daycam_test.yml
+bench.yaml
+bench.yml
+
+# schema table
+db/model/schemamigration.xo.go
+
+# go coverage result and html
+coverage/*
+coverage.cov
+coverage.html
+unit_test_result
+
+# ignore .DS_Store
+**/.DS_Store
+
+# ignore local files
+local.*
+.ignore
+config_local/*
+
+main*

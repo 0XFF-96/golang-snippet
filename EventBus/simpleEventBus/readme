@@ -1,0 +1,14 @@
+
+###  文章总结
+1、The traditional approach to implementing an event bus involves using callbacks. Subscribers usually implement an interface and then the event bus propagates data via the interface
+2、 topic based events
+3、
+
+
+
+
+
+### 一些思考
+1、如何去重？没有重复的订阅者？
+2、没有 timeout 的机制？ channel 一直会阻塞知道有人读它
+3、能否实现回调的方式？

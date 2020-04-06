@@ -63,4 +63,3 @@ local.*
 .ignore
 config_local/*
 
-main*

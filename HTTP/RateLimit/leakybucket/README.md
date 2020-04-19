@@ -15,3 +15,11 @@
 - https://www.jianshu.com/p/a59c13e70582
 - https://maiyang.me/post/2017-05-28-rate-limit-algorithm/ 
 - https://www.slideshare.net/vimal25792/leaky-bucket-tocken-buckettraffic-shaping
+- https://medium.com/@Alibaba_Cloud/detailed-explanation-of-guava-ratelimiters-throttling-mechanism-a1544b4babcf
+
+
+## repo
+- https://github.com/yangwenmai/ratelimit 
+- https://github.com/AMBzPHOTOz/ratelimit
+- https://github.com/bsm/ratelimit 
+

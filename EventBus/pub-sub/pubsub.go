@@ -5,14 +5,14 @@ import (
 )
 
 type Pubsub struct {
-	mu sync.RWMutex
+	mu   sync.RWMutex
 	subs map[string][]chan string
 
 	// close
 	closed bool
 }
 
-func NewPubsub()*Pubsub{
+func NewPubsub() *Pubsub {
 	ps := &Pubsub{}
 	ps.subs = make(map[string][]chan string)
 	return ps
@@ -73,9 +73,7 @@ func (ps *Pubsub) Publish(topic string, msg string) {
 	}
 }
 
-
 // There may be performance implications, of course.
 // Even though starting and tearing down goroutines is very quick,
 // do you really want a new one to run for every message?
 // The answer depends on your particular application. When in doubt, benchmark it.
-

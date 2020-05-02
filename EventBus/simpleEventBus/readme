@@ -1,11 +1,9 @@
 
 ###  文章总结
-1、The traditional approach to implementing an event bus involves using callbacks. Subscribers usually implement an interface and then the event bus propagates data via the interface
+1、The traditional approach to implementing an event bus involves using callbacks.
+Subscribers usually implement an interface and then the event bus propagates data via the interface
 2、 topic based events
 3、
-
-
-
 
 
 ### 一些思考

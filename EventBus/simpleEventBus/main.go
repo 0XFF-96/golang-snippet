@@ -58,6 +58,7 @@ func (eb *EventBus) Publish(topic string, data interface{}) {
 
 func (eb *EventBus) publishTo(topic string, data string) {
 	for {
+		// 这样不会死循环吗？
 		fmt.Println("publish")
 		eb.Publish(topic, data)
 		time.Sleep(1 * time.Second)

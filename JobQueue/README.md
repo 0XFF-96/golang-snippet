@@ -27,4 +27,4 @@ type Dispatcher struct {
 
 ## Reference 
 1、https://gist.github.com/harlow/dbcd639cf8d396a2ab73
-2、
+2、inspired by this article:http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/

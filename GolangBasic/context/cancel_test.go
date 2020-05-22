@@ -68,6 +68,7 @@ func TestParentFinishesChild(t *testing.T) {
 	timerChild, stop := context.WithTimeout(valueChild, 10000*time.Hour)
 	defer stop()
 
+	_ = cancel
 	select {
 	case x := <-parent.Done():
 		t.Errorf("<-parent.Done() == %v want nothing (it should block)", x)

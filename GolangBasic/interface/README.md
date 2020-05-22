@@ -12,6 +12,9 @@
 3、https://i6448038.github.io/2018/10/01/Golang-interface/
 
 
+4、interface 的一个视频，很好说清楚了类型
+https://www.youtube.com/watch?v=F4wUrj6pmSI&t=123s
+
 // 从 golang-notes
 // 中 copy 过来的一个文档
 // 结合这篇文章，将一下 reflect 和 interface

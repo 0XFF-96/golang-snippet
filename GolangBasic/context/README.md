@@ -1,7 +1,8 @@
 ### TODO 
+
 1、继续整理 Context 代码官方文章
 2、写重点函数解析文章
-3、
+3、git checkout 一下官方的库，看看有什么东西值得查看。
 
 
 ### 文章
@@ -9,7 +10,7 @@
 2、https://learnku.com/articles/29877 
 3、https://learnku.com/articles/29877 
 4、https://zhuanlan.zhihu.com/p/34417106 
-5、
+5、幕布上之前整理过的文章集合：https://mubu.com/doc3c36FqaM2_ 
 
 ### 官方 Context Eample 最佳实践
 1- 用法1: 用于防止 goroutine leak 泄露

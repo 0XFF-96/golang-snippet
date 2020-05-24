@@ -6,6 +6,6 @@ Most of the code here are inspired by different repos that you can find referenc
 
 
 
-### resource 
-1、Udacity:https://github.com/mikesprague/udacity-nanodegrees
-2、
+### RESOURCE 
+- 1、Udacity:https://github.com/mikesprague/udacity-nanodegrees
+

@@ -1,5 +1,6 @@
 # golang-snippet
-The one that I used for store my practice code and code base
+this is the repo that I used for store my practice code. 
+Most of the code here are inspired by different repos that you can find reference inside every sigle dir.
 
 
 

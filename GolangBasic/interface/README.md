@@ -4,7 +4,7 @@
 - The representation of an interface
 -
 2、https://research.swtch.com/interfaces [未看]
-
+3、https://juejin.im/post/5a6873fd518825734501b3c5 [未看，对接口对深入理解]
 
 --==== 未看 ---===
 1、https://juejin.im/post/5d31884af265da1baa1eae79

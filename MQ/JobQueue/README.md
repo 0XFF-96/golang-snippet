@@ -25,7 +25,7 @@ type Dispatcher struct {
 1、https://gist.github.com/harlow/dbcd639cf8d396a2ab73
 2、inspired by this article:http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/
 3、http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/ 【非常不错的文章】【】
-
+4、http://big-elephants.com/2013-09/building-a-message-queue-using-redis-in-go/ 
 
 ## 消息队列设计
 1、https://github.com/uw-labs/substrate

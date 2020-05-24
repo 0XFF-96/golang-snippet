@@ -43,7 +43,7 @@ func TestTee(t *testing.T) {
 		fmt.Printf("out1: %v, out2 %v\n", val1, <-out2)
 	}
 
-	// Utilizing this pattern, It's easy to continue
+	// Utilizing this Pattern, It's easy to continue
 	// using channels as the join points of your system
 }
 

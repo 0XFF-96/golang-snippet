@@ -29,7 +29,7 @@ drwxr-xr-x    8 lijinrui  staff    256 Dec 16 14:11 debug
 drwxr-xr-x   14 lijinrui  staff    448 Dec 16 14:11 encoding
 drwxr-xr-x    7 lijinrui  staff    224 Dec 16 14:11 errors
 drwxr-xr-x    4 lijinrui  staff    128 Dec 16 14:11 expvar
-drwxr-xr-x    7 lijinrui  staff    224 Dec 16 14:11 flag
+drwxr-xr-x    7 lijinrui  staff    224 Dec 16 14:11 flag: 20:5-25, 
 drwxr-xr-x   15 lijinrui  staff    480 Dec 16 14:11 fmt
 drwxr-xr-x   14 lijinrui  staff    448 Dec 16 14:11 go
 drwxr-xr-x   11 lijinrui  staff    352 Dec 16 14:11 hash
@@ -70,8 +70,7 @@ drwxr-xr-x    4 lijinrui  staff    128 Dec 16 14:11 vendor
 
 
 ### 相关函数 
-
-### 博客basic
+### 博客 Basic
 
 1. [x] [Bootstrap](bootstrap.md)
 2. [x] [Channel](channel.md)

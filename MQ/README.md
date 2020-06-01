@@ -8,6 +8,8 @@
 6、https://alexstocks.github.io/html/im.html 一套简洁的即时通信(IM)系统
 7、https://alexstocks.github.io/html/pubsub.html
 8、携程异步消息实践 [https://blog.csdn.net/qiansg123/article/details/80121900]
+9、满分💯 推荐 [https://www.codedump.info/post/20191013-im-msg-out-of-order/]
+10、IM 服务器设计基础 https://www.codedump.info/post/20190608-im-design-base/
 
 ###  即时通讯技术研究
 1、http://www.mit.edu/~6.005/fa09/projects/guichat/assignment.html

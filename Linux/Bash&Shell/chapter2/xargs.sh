@@ -1,0 +1,3 @@
+
+cat example.txt | xargs
+

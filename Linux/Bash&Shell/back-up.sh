@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 BACKUPFILE=backup-$(date +%m-%d-%Y)

@@ -1,0 +1,4 @@
+mac 20000
+winxp 4000
+bsd 1000
+linux 1000

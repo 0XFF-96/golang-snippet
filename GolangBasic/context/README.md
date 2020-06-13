@@ -46,4 +46,44 @@ func AllocsPerRun(runs int, f func()) (avg float64) {
 
 - TestSimultaneousCancels： 测试同时取消函数
 - CancelRemoves: 测试在 child 因为 timeout 的情况下，parent 数据结构的改变
-> 主要测试的是以下代码的逻辑：`func (c *cancelCtx) cancel(removeFromParent bool, err error) {` 
+> 主要测试的是以下代码的逻辑：`func (c *cancelCtx) cancel(removeFromParent bool, err error) {`
+
+
+### 知识点1
+
+
+```
+完整代码
+func (c *cancelCtx) Done() <-chan struct{} {
+ c.mu.Lock()
+ if c.done == nil {
+  c.done = make(chan struct{})
+ }
+ d := c.done   // ？
+ c.mu.Unlock() // ？
+ return d      // ？
+               // 这三行的代码是干什么用的？
+} 
+
+为什么需要把 d 复制一份出来？
+```
+
+```
+Aofei Sheng, [Jun 21, 2020 at 2:25:35 PM]:
+意义完全不同哦
+
+不要误会了，这里的 d 是永远不会再被篡改的
+
+可 c.done 是一个可被访问可被篡改的结构体字段
+
+返回 d 跟返回 c.done 在本质上是有区别的，无关乎 c.done 在设计上存不存在被改的可能
+
+
+最根本原因是
+锁了
+要拿到一个不会被改掉的 chan 只能这样做了
+而是 mu 保护了 done
+但是 unlock 后汝直接 return c.done 就有[并发安全]的问题
+汝在 unlock 前把 done 复制了出来，那么 done 改成啥都没问题了
+```
+

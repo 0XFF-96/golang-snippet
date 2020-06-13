@@ -25,5 +25,5 @@ func f4(a [5]int) {
 func main() {}
 
 // 动手实验🧪
-// $ go build -gcflags="-d=ssa/check_bce/debug=1" main.go.bak
+// $ go build -gcflags="-d=ssa/check_bce/debug=1" mapreduce.go.bak
 //

@@ -1,5 +1,3 @@
-
-
 # 大小写转换
 echo "HELOO WHO IS THIS" | tr 'A-Z' 'a-z'
 

@@ -1,6 +1,3 @@
-
-
-
 ### 相关文档
 - https://www.networkworld.com/article/3058234/getting-the-most-from-ifconfig.html
 - https://en.wikipedia.org/wiki/Ifconfig

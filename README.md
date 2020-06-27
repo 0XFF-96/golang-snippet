@@ -4,7 +4,8 @@ Most of the code here are inspired by different repos that you can find referenc
 
 
 ### RESOURCE
-1、Udacity:https://github.com/mikesprague/udacity-nanodegrees
+- Udacity:https://github.com/mikesprague/udacity-nanodegrees
+- 参考这位老哥写的，后台组件学习与研究。 https://github.com/feixiao/service
 
 
 

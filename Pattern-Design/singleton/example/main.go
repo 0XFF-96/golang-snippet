@@ -37,7 +37,7 @@ func GetInstanceV2() *singleton {
 	return instance
 }
 
-// Check-Lock-Check Pattern
+// Check-Lock-Check Pattern-Design
 // if check {
 // lock() {
 //    if check(){

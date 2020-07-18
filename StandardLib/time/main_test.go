@@ -21,6 +21,8 @@ func TestT(t *testing.T){
 	t.Log(now.Sub(b).Minutes())
 	t.Log(a.Sub(b).Minutes())
 
+	// 没有这个时间数据库...
+	// 因为 docker 包没有
 	loc, _ := time.LoadLocation("Asia/Shanghai")
 
 	//loc, —— := time.LoadLocation("Beijing")

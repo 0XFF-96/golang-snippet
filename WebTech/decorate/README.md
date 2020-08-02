@@ -1,9 +1,5 @@
-
-
-
-
 ### 相关函数
-
+1. 在 nsq 里面的装饰者函数。
 ```golang
 func Decorate(f APIHandler, ds ...Decorator) httprouter.Handle {
 	decorated := f

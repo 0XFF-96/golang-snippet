@@ -16,4 +16,4 @@
 1. https://qcrao.com/2019/01/16/dive-into-three-way-handshake/
 2. HTTP 分析， https://qcrao.com/2019/01/18/dive-into-http/
 3. backlog, https://developpaper.com/understand-the-handling-of-tcp-handshake-by-the-server-and-what-is-backlog/
-4. 
+4. 利用 netstat 监控大量 ESTABLISHED 连接书和 TIME_WAIT 数量， https://blog.nowcoder.net/n/758c3a57e80940eba894d5e5172a4186

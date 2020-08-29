@@ -23,3 +23,9 @@ https://www.youtube.com/watch?v=F4wUrj6pmSI&t=123s
 // 结合这篇文章，将一下 reflect 和 interface
 // 还有，go 语言圣经中的文章。
 //
+
+
+
+### 结合 sync.Map 的相关知识点
+1. https://stackoverflow.com/questions/38043678/golang-embedded-interface-on-parent-struct/38058463
+2. https://stackoverflow.com/questions/29971363/golang-reflection-on-interface-vs-pointer-to-interface

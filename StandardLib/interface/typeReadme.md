@@ -10,6 +10,13 @@ reflect.ValueOf.Elem => 获取指针指向的对象、获取 map 的 val，获�
 
 // It panics if the type's Kind is not Array, Chan, Map, Ptr, or Slice.
 
+### reflect 三定律 
+
+1、Reflection goes from interface value to reflection object.
+2、Reflection goes from reflection object to interface value.
+3、To modify a reflection object, the value must be settable.
+
+总结一下就是：接口型变量 和 反射类型对象可以相互转化。 
 ## 基本类型
 
 bool, int, uint, uintptr, float, complex

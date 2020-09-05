@@ -1,18 +1,16 @@
 ### TODO 
-
 1、继续整理 Context 代码官方文章
 2、写重点函数解析文章
 3、git checkout 一下官方的库，看看有什么东西值得查看。
 
-
 ### 文章
-1、https://blog.xizhibei.me/2019/08/26/golang-the-highly-controversial-context/ 
-2、https://learnku.com/articles/29877 
-3、https://learnku.com/articles/29877 
-4、https://zhuanlan.zhihu.com/p/34417106 
-5、幕布上之前整理过的文章集合：https://mubu.com/doc3c36FqaM2_ 
+1、https://blog.xizhibei.me/2019/08/26/golang-the-highly-controversial-context 
+2、https://learnku.com/articles/29877
+3、https://zhuanlan.zhihu.com/p/34417106
+4、幕布上之前整理过的文章集合：https://mubu.com/doc3c36FqaM2_ 
+5、曹大的文章：https://github.com/cch123/golang-notes/blob/master/context.md
 
-### 官方 Context Eample 最佳实践
+### 官方 Context Example 最佳实践
 1- 用法1: 用于防止 goroutine leak 泄露
 2- 设置 cancel 方法，用于主动删除场景
 3- 设置超时时间
@@ -47,7 +45,6 @@ func AllocsPerRun(runs int, f func()) (avg float64) {
 - TestSimultaneousCancels： 测试同时取消函数
 - CancelRemoves: 测试在 child 因为 timeout 的情况下，parent 数据结构的改变
 > 主要测试的是以下代码的逻辑：`func (c *cancelCtx) cancel(removeFromParent bool, err error) {`
-
 
 ### 知识点1
 

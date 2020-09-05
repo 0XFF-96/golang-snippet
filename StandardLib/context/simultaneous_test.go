@@ -10,7 +10,6 @@ import (
 
 // 这个例子
 // 针对如何对并发函数进行测试，有很大的启发作用
-//
 func TestSimultaneous(t *testing.T) {
 	root, cancel := context.WithCancel(context.Background())
 	m := map[context.Context]context.CancelFunc{root: cancel}

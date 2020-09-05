@@ -19,3 +19,14 @@ sort file |uniq -d
 
 - 统计
 sort file | uniq -c
+
+
+### 在每一行前后添加字符
+
+https://www.jianshu.com/p/a79955ff6374
+
+1. 在每一行首 
+
+2. 在每一行末尾
+
+sed 's/$/&TAIL/g' test.file

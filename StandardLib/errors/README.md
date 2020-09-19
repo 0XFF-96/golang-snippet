@@ -78,3 +78,17 @@ What's more ?
 
 
 5. 我们需要在(出口层)做 统一的 log 处理机制 ！！！！！
+
+
+6. 最后，重点强调一下。 
+
+```
+//只附加新的信息
+func WithMessage(err error, message string) error
+
+//只附加调用堆栈信息
+func WithStack(err error) error
+
+//同时附加堆栈和信息
+func Wrap(err error, message string) error
+```

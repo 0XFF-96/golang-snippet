@@ -2,7 +2,10 @@ package atomic
 
 import (
 	"sync/atomic"
+	"testing"
 	"time"
+
+	"github.com/stretchr/testify/require"
 )
 
 func loadConfig() map[string]string {
@@ -15,7 +18,7 @@ func requests() chan int {
 
 // The following example shows how to use Value for periodic program config updates
 // and propagation of the changes to worker goroutines.
-func ExampleValue_config() {
+func TestExampleValue_config(t *testing.T) {
 	var config atomic.Value // holds current server configuration
 	// Create initial config value and store into config.
 	config.Store(loadConfig())
@@ -38,4 +41,29 @@ func ExampleValue_config() {
 			}
 		}()
 	}
+}
+
+// 为什么减一, 需要这样实现？
+func TestDeltaOneUint32(t *testing.T) {
+	var i uint32
+	i = 30
+	atomic.AddUint32(&i, ^uint32(0))
+	require.Equal(t, i, uint32(29))
+
+	i = 0
+	atomic.AddUint32(&i, ^uint32(0))
+	// 溢出了
+	// 4294967295
+	t.Log(i)
+}
+
+func TestDeltaInt32(t *testing.T) {
+	var i int32
+	i = 30
+	atomic.AddInt32(&i, ^int32(0))
+	require.Equal(t, i, int32(29))
+
+	i = 0
+	atomic.AddInt32(&i, ^int32(0))
+	require.Equal(t, i, int32(-1))
 }

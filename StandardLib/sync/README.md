@@ -69,6 +69,5 @@ sync.Map没有Len方法，并且目前没有迹象要加上 (issue#20680),所以
 ### pool 相关知识点
 1. http://cbsheng.github.io/posts/golang%E6%A0%87%E5%87%86%E5%BA%93sync.pool%E5%8E%9F%E7%90%86%E5%8F%8A%E6%BA%90%E7%A0%81%E7%AE%80%E6%9E%90/
 
-
 ### mutex 相关
 1. https://colobu.com/2018/12/18/dive-into-sync-mutex/

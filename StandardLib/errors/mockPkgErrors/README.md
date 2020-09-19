@@ -1,0 +1,1 @@
+### This is the package mock pkg/errors's code for learning

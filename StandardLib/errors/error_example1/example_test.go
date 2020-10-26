@@ -62,11 +62,6 @@ func MiddleMethod1() error {
 	if err != nil {
 		return err
 	}
-	//
-	//err = basicMethod2()
-	//if err != nil {
-	//	return err
-	//}
 	return nil
 }
 

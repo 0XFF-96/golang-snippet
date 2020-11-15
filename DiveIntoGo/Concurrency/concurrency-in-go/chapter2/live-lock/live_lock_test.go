@@ -66,7 +66,7 @@ func TestLiveLock(t *testing.T){
 
 // 上面程序与原程序有出入
 // success 了，可能有几个地方写错了。
-// 1、This example demostrates a very common reason livelocks are written:
+// 1、This different-struct-memory demostrates a very common reason livelocks are written:
 // two or more concurrent processes attemption to prevent a deadlock with coordination.
 // 2、Livelocks are a subset of a larger set of problems called starvation.
 //

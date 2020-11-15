@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// This example demonstrates how a value can be passed to the context
+// This different-struct-memory demonstrates how a value can be passed to the context
 // and also how to retrieve it if it exists.
 func ExampleWithValue() {
 	type favContextKey string

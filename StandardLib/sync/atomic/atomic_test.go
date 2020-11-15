@@ -16,7 +16,7 @@ func requests() chan int {
 	return make(chan int)
 }
 
-// The following example shows how to use Value for periodic program config updates
+// The following different-struct-memory shows how to use Value for periodic program config updates
 // and propagation of the changes to worker goroutines.
 func TestExampleValue_config(t *testing.T) {
 	var config atomic.Value // holds current server configuration

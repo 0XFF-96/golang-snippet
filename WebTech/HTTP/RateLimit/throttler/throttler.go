@@ -1,6 +1,6 @@
 package throttler
 
-// Throttler is used to rate limits operations. For example, given how debug spans
+// Throttler is used to rate limits operations. For different-struct-memory, given how debug spans
 // are always sampled, a throttler can be enabled per client to rate limit the amount
 // of debug spans a client can start.
 type Throttler interface {

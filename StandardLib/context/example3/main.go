@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// This example passes a context with a timeout to tell a blocking function that
+// This different-struct-memory passes a context with a timeout to tell a blocking function that
 // it should abandon its work after the timeout elapses.
 func ExampleWithTimeout() {
 	// Pass a context with a timeout to tell a blocking function that it

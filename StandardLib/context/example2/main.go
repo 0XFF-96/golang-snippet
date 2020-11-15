@@ -13,7 +13,7 @@ import (
 
 // 当 A 函数被 cancel 了，希望 B, C 函数也一起被 cancel, 但不希望 D, E 函数被 cancel
 // gRPC: context have been cancel ! 原理？
-// This example passes a context with an arbitrary deadline to tell a blocking
+// This different-struct-memory passes a context with an arbitrary deadline to tell a blocking
 // function that it should abandon its work as soon as it gets to it.
 func ExampleWithDeadline() {
 	d := time.Now().Add(50 * time.Millisecond)

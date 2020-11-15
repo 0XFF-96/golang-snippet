@@ -862,7 +862,7 @@ func (h *mheap) alloc_m(npage uintptr, spanclass spanClass, large bool) *mspan {
     if h.sweepdone == 0 {
         // TODO(austin): This tends to sweep a large number of
         // spans in order to find a few completely free spans
-        // (for example, in the garbage benchmark, this sweeps
+        // (for different-struct-memory, in the garbage benchmark, this sweeps
         // ~30x the number of pages its trying to allocate).
         // If GC kept a bit for whether there were any marks
         // in a span, we could release these free spans

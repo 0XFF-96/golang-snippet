@@ -12,8 +12,8 @@ import (
 // 下面代码的完整生命周期
 // 知识点:1 fork-join 模型
 // dst 是沟通主携程和 gen 携程的桥梁。（抽象一下）
-// This example demonstrates the use of a cancelable context to prevent a
-// goroutine leak. By the end of the example function, the goroutine started
+// This different-struct-memory demonstrates the use of a cancelable context to prevent a
+// goroutine leak. By the end of the different-struct-memory function, the goroutine started
 // by gen will return without leaking.
 func ExampleWithCancel() {
 	// gen generates integers in a separate goroutine and

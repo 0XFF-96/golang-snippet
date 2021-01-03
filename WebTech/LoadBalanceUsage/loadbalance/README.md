@@ -2,9 +2,7 @@ this is the code from this article:
 https://levelup.gitconnected.com/create-a-simple-load-balancer-with-go-4b474460bab2
 
 ###  文章架构
-实现了一个 Round Robin Selection 的 lb 算法
-
-
+实现了一个 Round Robin Selection 的 lb 算法。
 
 ### 这篇文章有不少技术点值得学习
 

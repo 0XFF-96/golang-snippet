@@ -30,3 +30,10 @@ https://www.jianshu.com/p/a79955ff6374
 2. 在每一行末尾
 
 sed 's/$/&TAIL/g' test.file
+sed 's/^/HEAD&/g' test.file
+
+
+sed '/./{s/^//"&/;s/$/&/",/}' ids
+
+
+sed 's/^/"&/g' ids2

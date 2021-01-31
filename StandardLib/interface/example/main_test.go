@@ -29,7 +29,8 @@ func TestT(t *testing.T) {
 	f = v.Elem().FieldByName("handsome")
 
 	// 这一句会导致 panic，因为 handsome 字段未导出
-	//f.SetBool(true)
+	// 具体在那个条件下
+	// f.SetBool(true)
 	fmt.Println(f.Bool())
 }
 

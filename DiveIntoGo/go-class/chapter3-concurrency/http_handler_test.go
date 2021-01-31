@@ -30,19 +30,12 @@ func TestDelegation(t *testing.T){
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "hi")
 	})
-
 }
-
-
 // 3. 一般抽象的写法
-
 func serveAPP() {
 }
-
 func serveDebug() {
 }
-
-
 
 // 1. serveDebug 退出，代码仍然感知不到
 // 2. serveApp 返回，将导致 main.main 退出。 只能

@@ -23,8 +23,6 @@ https://www.youtube.com/watch?v=F4wUrj6pmSI&t=123s
 // 中 copy 过来的一个文档
 // 结合这篇文章，将一下 reflect 和 interface
 // 还有，go 语言圣经中的文章。
-//
-
 
 ### 反射的应用
 1、IDE 中的代码自动补全功能、
@@ -41,3 +39,11 @@ https://www.youtube.com/watch?v=F4wUrj6pmSI&t=123s
 ### 结合 sync.Map 的相关知识点
 1. https://stackoverflow.com/questions/38043678/golang-embedded-interface-on-parent-struct/38058463
 2. https://stackoverflow.com/questions/29971363/golang-reflection-on-interface-vs-pointer-to-interface
+
+### 结构体内嵌 interface 的用法[视频]
+1、https://mubu.com/app/edit/home/2IHkQXa2J_ 。 
+
+
+### 
+1、TypeOf 和 ValueOf 源码分析
+2、

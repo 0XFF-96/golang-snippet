@@ -1,9 +1,13 @@
 ### 重读经典文章
 1、https://blog.golang.org/laws-of-reflection 入门必读系列 Rob pike 写的 3-15
 2、中文版: https://segmentfault.com/a/1190000006190038 6-22
-
 4、https://research.swtch.com/interfaces [未看]
 5、https://juejin.im/post/5a6873fd518825734501b3c5 [未看，对接口对深入理解]
+6、http://legendtkl.com/2017/06/12/understanding-golang-interface/
+7、
+
+
+
 
 --==== 未看 ---===
 1、https://juejin.im/post/5d31884af265da1baa1eae79

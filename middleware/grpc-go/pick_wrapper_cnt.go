@@ -2,7 +2,6 @@ package grpc_go
 
 import (
 	"context"
-
 	"github.com/grpc/grpc-go/balancer"
 	"github.com/liangzhiyang/annotate-grpc-go/transport"
 )

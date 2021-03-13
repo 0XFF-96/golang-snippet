@@ -19,10 +19,20 @@ type (
 		expire         time.Duration
 		timingWheel    *TimingWheel
 		lruCache       lru
+
+		// 这个 barrier 的设计，优缺点？
 		barrier        syncx.SharedCalls
+
+		// unstable
 		unstableExpiry Unstable
 		stats          *cacheStat
 	}
+
+	// NOTE: 可以优化的空间
+	// 1. 读写锁🔒  RWmutext
+	// 2. 分 shard
+	// 3. 可能( ring buffer ?)
+	// 4. 元信息和存储分离
 )
 
 func NewCache(expire time.Duration, opts ...CacheOption) (*Cache, error) {

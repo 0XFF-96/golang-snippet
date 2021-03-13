@@ -13,5 +13,8 @@ https://halfrost.com/go_map_chapter_two/
 runtime: maps do not shrink after elements removal (delete) 。内存泄露
 这里可以参考 go-zero 的解决方案。 
 
-2.
+
+### 为什么 go key 是无序的？
+- https://www.bookstack.cn/read/qcrao-Go-Questions/map-map%20%E4%B8%AD%E7%9A%84%20key%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A0%E5%BA%8F%E7%9A%84.md
+
 

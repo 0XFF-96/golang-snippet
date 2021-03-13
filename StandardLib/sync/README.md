@@ -1,12 +1,10 @@
 ### 文章推荐
 1、https://www.jianshu.com/p/ce1553cc5b4f 【sync 进化方向】
-2、
 
 ### Sync bug 
 1. https://github.com/golang/go/issues/41011
 2. https://github.com/golang/go/pull/41000
 3. https://gocn.vip/topics/10860
-
 
 ### Sync map 
 from:https://cloud.tencent.com/developer/article/1539049
@@ -60,9 +58,8 @@ sync.Map的实现有几个优化点，这里先列出来，我们后面慢慢分
 sync.Map没有Len方法，并且目前没有迹象要加上 (issue#20680),所以如果想得到当前Map中有效的entries的数量，需要使用Range方法遍历一次， 比较X疼
 
 
-
 ### java 对于共享 map 的解决方案
-1、java的ConcurrentHashMap的实现，在map的数据非常大的情况下，
+1、jav a的 ConcurrentHashMap的实现，在map的数据非常大的情况下，
 一把锁会导致大并发的客户端共争一把锁，Java的解决方案是shard, 内部使用多个锁，
 每个区间共享一把锁，这样减少了数据共享一把锁带来的性能影响，
 

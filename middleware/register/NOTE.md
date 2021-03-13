@@ -32,7 +32,6 @@ https://github.com/grpc/grpc/blob/master/doc/load-balancing.md
 - https://github.com/wwcd/grpc-lb
 - https://github.com/wothing/wonaming
 
-
 ### FAQ 
-- 想 eruaka 和 b 站的 discovery 方案和 B 站的方案是属于同一类型的吗？ 它们之间的优缺点是什么？
--
+- 想 eruaka 和 b 站的 discovery 方案和 B 站的方案是属于同一类型的吗？ 它们之间的优缺点是什么？（AP？）（CAP ?)
+- 

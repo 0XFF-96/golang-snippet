@@ -1,6 +1,5 @@
 # 利用 redis 设计消息队列
 
-
 ### 前置知识
 - 在看这篇文章之间，你必须要过一遍 BLPOP, RPush Redis 阻塞队列的机制。`BRPOP key [key ...] timeout`
 - redis 支持 atomic list operations 

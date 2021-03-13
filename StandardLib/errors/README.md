@@ -1,6 +1,3 @@
-
-
-
 ### Errors 案例分析
 1. 用一个例子体会一下 `sql No rows error 的烦人之处`
 2. 用一个优化的例子，看看上面的代码如何优化。 
@@ -92,3 +89,14 @@ func WithStack(err error) error
 //同时附加堆栈和信息
 func Wrap(err error, message string) error
 ```
+
+
+### 错误处理原则
+1、errors 相关的东西。 
+2、平时普通返回， 什么情况下需要用 wrap ?
+3、什么情况需要用 wrap ? error 来自于外部的， 不能被本程序处理。 
+4、当外部接口不够完善时，用 wrap 来包装更多信息。 
+5、用【接口】来规范，错误行为。 
+6、控制 error 的构造方法， 来规范 error 的分类。 
+7、如何对于一个库，进行错误设计（custom error )。 如果针对调用者进行错误设计， 如何对于运维/devops 进行错误哦设计。
+

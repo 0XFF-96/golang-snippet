@@ -14,7 +14,9 @@ map[uint]int
 ``
 
 
-
 ### Reference 
 1. https://colobu.com/2019/11/18/how-is-the-bigcache-is-fast/
-2. s
+2. https://blog.csdn.net/weixin_33519829/article/details/112098752
+这篇文章对 big-cache 的内存布局有比较大的帮助，
+尤其是如何实现 bytes queue 和 ring-buffer 方面。
+3.  

@@ -7,6 +7,10 @@ import (
 
 type cache struct {
 	defaultExpiration time.Duration
+
+	// 为什么这里用 string
+	// interface{}, 作为 key 行不行？ 为什么
+	//
 	items             map[string]Item
 	
 	// 大锁🔒

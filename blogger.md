@@ -3,8 +3,9 @@
 
 ### Golang 
 - 即刻工程师： https://blog.joway.io/posts/golang-common-pool/
-- 腾讯工程师:  ßhttps://pandaychen.github.io/page5/
-- 头条工程师: 
+- 腾讯工程师:  https://pandaychen.github.io/page5/
+- 头条工程师: https://halfrost.com/ [冰霜之地]
+- 七牛工程师: https://github.com/Xuanwo
 
 ### 技术团队
 - 即刻技术团队

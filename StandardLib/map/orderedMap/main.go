@@ -107,5 +107,4 @@ type myOrderedMap struct {
 // 字段keys的值总是已排序的，应该能够确定某一个元素值的具体位置。
 // 字段keys既然可以在运行时决定它的值的元素类型，那么就可以在运行时获知这个元素类型。
 // 字段keys的值中的不同元素值比较
-
 // https://medium.com/swlh/an-ordered-map-in-go-436634692381

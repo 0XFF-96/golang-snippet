@@ -7,6 +7,10 @@
 - 头条工程师: https://halfrost.com/ [冰霜之地]
 - 七牛工程师: https://github.com/Xuanwo
 
+#### UNKNOWN
+- http://xiaorui.cc/ https://github.com/rfyiamcool
+- https://www.howie6879.cn/page/2/ https://github.com/howie6879 【不错的小伙伴】
+
 ### 技术团队
 - 即刻技术团队
 - 小米技术团队

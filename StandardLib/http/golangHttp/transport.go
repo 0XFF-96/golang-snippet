@@ -2,6 +2,7 @@ package golangHttp
 
 import (
 	"container/list"
+	"context"
 	"sync"
 )
 
@@ -32,14 +33,22 @@ type wantConnQueue struct {
 	tail    []*wantConn
 }
 
-type wantConn struct {
-
-}
 // connectMethodKey is the map key version of connectMethod, with a
 // stringified proxy URL (or the empty string) instead of a pointer to
 // a URL.
 type connectMethodKey struct {
 	proxy, scheme, addr string
 	onlyH1              bool
+}
+
+
+func (t *Transport) dialConn(ctx context.Context, cm connectMethod) (pconn *persistConn, err error) {
+	pconn = &persistConn{
+	}
+
+	// 两个核心方法
+	//go pconn.readLoop()
+	//go pconn.writeLoop()
+	return pconn, nil
 }
 

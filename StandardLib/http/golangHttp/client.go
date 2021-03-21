@@ -10,7 +10,6 @@ type Client struct {
 	Transport RoundTripper
 	CheckRedirect func(req *Request, via []*Request) error
 
-
 	// 1. 什么情况 cooieJar 会等于 nil ?
 	// 2. 在 send 方法的时候，为什么需要对偶设置 cookie jar
 	// 3. 在请求时， req.AddCookie(cookie)
@@ -60,14 +59,12 @@ func (c *Client) do(req *Request) (retres *Response, reterr error) {
 			// copyHeaders(req)
 			return nil, nil
 		}
-
 		// 1. 将 the first req 放入 reqs
 		// 2. 有可能需要 重定向之类的操作
 		reqs = append(reqs, req)
 
 		var err error
 		var didTimeout func() bool
-
 
 		//var shouldRedirect bool
 		//redirectMethod, shouldRedirect, includeBody = redirectBehavior(req.Method, resp, reqs[0])
@@ -115,7 +112,15 @@ func (c *Client) send(req *Request, deadline time.Time) (resp *Response, didTime
 
 // send issues an HTTP request.
 // Caller should close resp.Body when done reading from it.
-func send(ireq *Request, rt RoundTripper, deadline time.Time) (resp *Response, didTimeout func() bool, err error) {
+func send(
+	ireq *Request,
+	rt RoundTripper,
+	deadline time.Time,
+	) (
+	resp *Response,
+	didTimeout func() bool,
+	err error,
+	) {
 	// 1.
 	// rt == nil, req.URL == nil, req.RequestURI != ""
 	//
@@ -131,6 +136,8 @@ func send(ireq *Request, rt RoundTripper, deadline time.Time) (resp *Response, d
 
 	return nil, nil, nil
 }
+
+
 // 这个函数很关键，是 client cancel 的监听器之一。
 func setRequestCancel(req *Request, rt RoundTripper, deadline time.Time) (stopTimer func(), didTimeout func() bool) {
 	return nil, nil

@@ -1,5 +1,7 @@
 ### 文章推荐
 1、https://www.jianshu.com/p/ce1553cc5b4f 【sync 进化方向】
+2、sync map 原来剖析 
+https://jiajunhuang.com/articles/2021_03_15-go_sync_map.md.html
 
 ### Sync bug 
 1. https://github.com/golang/go/issues/41011

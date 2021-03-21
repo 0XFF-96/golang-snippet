@@ -1,6 +1,5 @@
 package golangHttp
 
-
 type RoundTripper interface {
 	RoundTrip(*Request) (*Response, error)
 }

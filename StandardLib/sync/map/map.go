@@ -16,7 +16,6 @@ type readOnly struct {
 	m       map[interface{}]*entry
 
 	// 什么情况下会是 true ?
-	// 出事专题
 	amended bool // true if the dirty map contains some key not in m.
 }
 
@@ -281,6 +280,7 @@ func (m *Map) Debug() {
 	for k := range m.dirty {
 		println(k)
 	}
+
 	println("sync.Map debug end.")
 	m.mu.Unlock()
 }

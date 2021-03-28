@@ -19,11 +19,11 @@ select a language and try its Quick start
 ### Naming & Load balance 
 1、https://github.com/grpc/grpc/blob/master/doc/load-balancing.md [必看][1]
 高清楚三者直接的互动：
-2、Name Resolution:https://github.com/grpc/grpc/blob/master/doc/naming.md
+2、Name Resolution: https://github.com/grpc/grpc/blob/master/doc/naming.md
 
 ### 源码与架构
 1、grpc 源码架构分析， https://segmentfault.com/a/1190000022839862 
-2、源码解读， https://www.bookstack.cn/read/grpc-read/3-grpc%20hello%20world%20server%20%E8%A7%A3%E6%9E%90.md 。 
+2、源码解读， https://www.bookstack.cn/read/grpc-read/3-grpc%20hello%20world%20server%20%E8%A7%A3%E6%9E%90.md 
 
 ### grpc 与注册中心方案
 1、https://learnku.com/articles/34777

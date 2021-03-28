@@ -1,8 +1,14 @@
 ### 微服务注册中心文章系列
 1. [比较系统介绍 consul 微服务的实现] https://laravelacademy.org/post/21213
+2. 利用 etcd 实现一个简单的注册中心源代码： https://github.com/awei0217/go_common/blob/master/grpc/helloworld_demo/register_center/etcd_resolver.go 
+3. https://segmentfault.com/a/1190000020944777 
 
 ### gRPC服务发现&负载均衡
 - https://segmentfault.com/a/1190000008672912
+
+
+### grpc 源码解读
+1. https://learnku.com/articles/35336
 
 ```
 http://www.grpc.io/docs/

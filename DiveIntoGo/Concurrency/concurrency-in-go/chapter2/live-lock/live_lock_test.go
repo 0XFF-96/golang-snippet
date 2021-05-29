@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-/ takeStep 的作用
+// takeStep 的作用
 // cadence 的作用
 // 强调的重点： move at the same rate of speed
 func TestLiveLock(t *testing.T){

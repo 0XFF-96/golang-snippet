@@ -78,7 +78,9 @@ type cmd struct {
 
 
 ### 如何实现等待队列？
-- ch 控制着 pool 中连接的数量，当取走一个时，需要 <-ch，当还回一个时，需要 ch <- struct{}{}。
+- 并发 goroutine 控制
+- ch 控制着 pool 中连接的数量，当取走一个时，需要 <-ch，当还回一个时，
+需要 ch <- struct{}{}。
 另外，还要考虑到某些失败的情况，是否需要将配额还回 ch
 
 
@@ -103,3 +105,6 @@ type cmd struct {
 		if wait {
 		
 ```
+
+
+

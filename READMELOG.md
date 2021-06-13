@@ -5,3 +5,4 @@
 为什么 resp.Body.Close() 为什么需要 close ?
 
 3. golang 热门技术：https://github.com/aceld/golang
+4. 刷题模板：https://github.com/greyireland/algorithm-pattern

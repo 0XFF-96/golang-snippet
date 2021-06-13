@@ -1,6 +1,6 @@
 ### Watch Ch  设计
 from: config-center 
-惊艳点： valueChs 的作用，用于广播信号。
+ valueChs 的作用，用于广播信号。
 ```
 func (d *dataContainer) WatchCh() <-chan interface{} {
 	ch := make(chan interface{}, 1)

@@ -91,7 +91,6 @@ func (bc BackoffConfig) backoff(retries int) (t time.Duration) {
 }
 ```
 
-
 ### circuit breaker 的相关用法资料
 - https://github.com/Netflix/Hystrix/wiki/How-it-Works#CircuitBreaker
 - 

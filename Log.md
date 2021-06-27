@@ -19,3 +19,4 @@
 - pkg/notify -> grafana notify 系统设计
 - DiveIntoGo/MockStandardLib: mock 一遍基础库的相关代码。
 - FrameWork/k8s client go 源码阅读
+- 增加 operation 目录，用于记录一些运维操作 Or 部署一些组件的操作

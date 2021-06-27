@@ -14,3 +14,8 @@
 - StandardLib/recover, recover 原理。
 - StandLib/Escape 逃逸分析
 - middleware/cache-general: asyncache 库 from bytedance
+- pkg/AccessControl grafana 权限控制和管理的源码阅读
+- pkg/process -> go-zero/proc 统一的 signal 和 graceful stop down 管理器
+- pkg/notify -> grafana notify 系统设计
+- DiveIntoGo/MockStandardLib: mock 一遍基础库的相关代码。
+- FrameWork/k8s client go 源码阅读

@@ -8,6 +8,8 @@
 - 七牛工程师: https://github.com/Xuanwo
 - 腾讯/阿里工程师： https://github.com/lubanproj 
 - 阿里工程师: 敖小剑老师 https://skyao.io/learning/tools/
+- unkonw: https://github.com/jukylin/blog
+- RedHat 工程师: https://morven.life/posts/the_k8s_api-1/ 
 
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool

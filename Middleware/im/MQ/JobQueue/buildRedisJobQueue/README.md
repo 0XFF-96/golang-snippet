@@ -3,11 +3,13 @@
 ### 前置知识
 - 在看这篇文章之间，你必须要过一遍 BLPOP, RPush Redis 阻塞队列的机制。`BRPOP key [key ...] timeout`
 - redis 支持 atomic list operations 
-- 
+
+### 来源于开源仓库 repo
+1. https://github.com/adjust/redismq
+2. https://github.com/adjust/rmq/tree/v1  【这个是新的代码】
 
 ### 
 1、http://big-elephants.com/2013-09/building-a-message-queue-using-redis-in-go/
-2、开源代码库：https://github.com/adjust/redismq
 3、Redis 阻塞队列的机制:https://redis.io/commands/blpop
 4、blpop 的相关实现,https://stackoverflow.com/questions/41294931/how-is-brpop-implemented-in-redis 
 5、https://redis.io/commands/rpoplpush

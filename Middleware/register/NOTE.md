@@ -5,6 +5,8 @@
 
 ### gRPC服务发现&负载均衡
 - https://segmentfault.com/a/1190000008672912
+- https://mp.weixin.qq.com/s?__biz=MzUzNTY5MzU2MA==&mid=2247486329&idx=1&sn=04cf6ab2613ac1174808fa727b18212f&chksm=fa80daeecdf753f8c4625bc522bce5960383da9eadf2edd5ef57a8ae384c99f7ebb45d43e397&token=1402983166&lang=zh_CN&scene=21#wechat_redirect
+
 
 
 ### grpc 源码解读

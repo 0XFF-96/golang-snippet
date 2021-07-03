@@ -1,5 +1,3 @@
-
-
 ### 为什么不能解决启动 k8s 集群？
 
 1、https://github.com/kubernetes/minikube/issues/2964

@@ -3,4 +3,5 @@
 
 REF:
 1、https://github.com/opsnull/kubernetes-dev-docs/tree/master/client-go
-2、Get Started, https://minikube.sigs.k8s.io/docs/handbook/controls/ 。 
+2、Get Started, https://minikube.sigs.k8s.io/docs/handbook/controls/ 
+

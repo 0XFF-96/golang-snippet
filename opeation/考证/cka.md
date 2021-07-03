@@ -22,3 +22,33 @@
 12、不懂， https://blog.csdn.net/u011127242/article/details/117583509 
 
 13、https://github.com/caicloud/kube-ladder/blob/master/tutorials/lab2-application-and-service.md 。 这些我回答不出来。 转云平台，起码需要过 cka 吧...
+
+
+
+### cka 证书资源
+1、cka 考题经验 https://github.com/yuyicai/cka-ckad-exam-experience
+
+2、https://psrts.in/exams/?e=CKA&k=exam%20dumps%20pdf&
+gclid=CjwKCAjww-CGBhALEiwAQzWxOkiuSrRHmIgtB-rEjO-wrZv44l5RqpBCGo7vMTm00CX0F6mLzT_oSBoCuJ0QAvD_BwE 
+
+3、https://cloud.tencent.com/developer/article/1638808
+
+4、https://blog.csdn.net/u011127242/article/details/114366086
+
+5、真题解析， https://blog.csdn.net/u011127242/category_10823035.html 
+
+6、经验， https://github.com/yuyicai/cka-ckad-exam-experience 
+
+7、cka 考题详解 https://github.com/lovejoy/lovejoy.github.com/issues/34 
+
+8、cka 考题详解， https://blog.spider.im/post/cka-exam/ 
+
+9、开源的 cka 课程， https://github.com/cncf/curriculum  
+
+
+### CKA 练习题
+1、https://github.com/dgkanatsios/CKAD-exercises
+
+2、https://xiaozhou.net/tips-to-pass-the-ckad-exam-2020-09-26.html
+
+3、云原生架构架构实践， https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html 

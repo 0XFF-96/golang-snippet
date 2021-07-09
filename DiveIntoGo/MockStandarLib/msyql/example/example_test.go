@@ -16,6 +16,7 @@ func GetDSN() string {
 }
 
 // 如何从 sql 抽象中间层 -> driver.Query 层
+// sql: http://luodw.cc/2016/08/28/golang02/
 func TestExample1(t *testing.T) {
 	// GetDSN 方法，看看
 	// DSN = data source name
@@ -27,6 +28,7 @@ func TestExample1(t *testing.T) {
 	db, err := sql.Open("mysql", GetDSN())
 	checkErr(err)
 
+	// 1. 如何检查参数输入，是否符合条件的？  SELECT * FROM user WHERE user_id = ? ( 但是没有传 user_id 的情况？)
 	rows, err := db.Query("select * from test")
 	checkErr(err)
 	var (

@@ -56,6 +56,8 @@ type DB struct {
 
 
 	// 这个 map 用来干嘛的？什么时候用的？
+	// 这个相当于一个 pending queue, 当达到最大连接极限，且设置为不能打开新的连接是。
+	// 需要连接的请求就会被放在这个 map, 等待 new open 的连接。
 	connRequests map[uint64]chan connRequest
 	resetterCh        chan *driverConn
 	// nextRequest  uint64 // Next key to use in connRequests.

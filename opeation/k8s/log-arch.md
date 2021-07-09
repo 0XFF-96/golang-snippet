@@ -19,7 +19,6 @@
 三、集群级日志架构方案
 1、我们现在采用的是哪种方案？
 
-
 ### 容器日志
 
 1、Pod中各容器的文件系统彼此隔离，且与宿主机的文件系统也互相隔离，使用了宿主机上的文件系统作为存储卷的场景除外。于是，容器中的日志信息若存储于容器内部的文件系统上，将会导致收集的困难，而且也会随着Pod的删除而丢失这些日志信息
@@ -37,7 +36,6 @@ https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/?spm=5176.
 5、部署日志收集代理（fluent-bit）
 持ClusterRolebinding等资源类型上的管理操作
 6、kubectl get statefulsets,deployments,services,ingress,pvc
-
 
 
 ### 资源

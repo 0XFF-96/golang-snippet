@@ -10,7 +10,9 @@
 - 阿里工程师: 敖小剑老师 https://skyao.io/learning/tools/
 - unkonw: https://github.com/jukylin/blog
 - RedHat 工程师: https://morven.life/posts/the_k8s_api-1/ 
-
+- 腾讯工程师: https://www.luozhiyun.com/341-2, https://github.com/devYun
+- 小鹏工程师: https://atbug.com/notes-for-cka-preparation/, https://github.com/addozhang
+- unkonw: http://xiaorui.cc/archives/7172
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool
 - https://www.howie6879.cn/page/2/ https://github.com/howie6879 【不错的小伙伴】

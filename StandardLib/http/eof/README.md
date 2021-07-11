@@ -1,5 +1,3 @@
-
-
 ### req.Close 的相关东西
 
 	// Close indicates whether to close the connection after
@@ -26,10 +24,7 @@ req.Close 用到的地方:
 			alive = false
 		}
 ```
-
 这两个的意思是指 incommingCtx, outgoingCtx 的区别 
-	
-	
 
 ### 为什么只有 upush 有这个问题，其他没有？
 - 跟 upush 服务器的行为有关系，如下图。
@@ -38,10 +33,8 @@ The problem that I ran into is that the server is responding with Connection:
 Keep-Alive in the response header and then immediately closing the connection
 ```
 
-
 And the req.Close = true, solution works 
 because it prevents the connection from being re-used
-
 
 The second GET request fails with "can't write HTTP request on broken connection" or
 "EOF".

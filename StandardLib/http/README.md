@@ -1,8 +1,5 @@
 ### 相关术语
 1.  shallow clone 浅拷贝
-2. 
-
-
 
 ### 核心方法
 1. RoundTrip 
@@ -49,10 +46,7 @@ type RoundTripper interface {
 ```
 
 有点意思
-
-
 3. 重点二： readLoop 和 writeLoop 
-
 ```
 	// Verify no outstanding requests after readLoop/writeLoop
 	// goroutines shut down.
@@ -62,16 +56,12 @@ type RoundTripper interface {
 ### 为什么没有 【连接池】不能被服用？
 - 如何监控这种情况？
 - 如何知道当前存储的连接是多少？
-
 - http://xiaorui.cc/archives/7172
-
-
 
 ### 为什么 resp.Body.Close() 为什么需要 close ?
 
 - 如果不 close 的话，会出现连接泄漏（表面原因） 
-- 根本原因：？
-
+- 根本原因：
 ref: https://segmentfault.com/a/1190000020086816?utm_source=sf-similar-article
 
 综上分析，可以发现，readLoop和 writeLoop 两个goroutine在 写入请求并获取response返回后，
@@ -79,11 +69,16 @@ ref: https://segmentfault.com/a/1190000020086816?utm_source=sf-similar-article
 所以，两个函数所在的goroutine并没有运行结束，
 导致了最开的现象: goroutine持续增加导致内存持续增加。 
 
-
 Close 的时候发生了什么？
 
 close的主要逻辑是通过调用 readLoop 的第89行定义的earlyCloseFn 方法， 向 waitForBodyRead 的chan写入false，进而让 readLoop 退出阻塞，终止 readLoop 的 goroutine
 
 readLoop 退出的时候，关闭 closech chan，进而让 writeLoop 退出阻塞，终止 writeLoop 的goroutine
 
+```
+当未读取 body 就进行 close时，会触发 earlyCloseFn() 回调，看 earlyCloseFn 的函数定义，
+在 close 未见 io.EOF时才调用。自定义的 earlyCloseFn 方法会给 readLoop 监听的 waitForBodyRead 传入 false, 
+这样引发 alive为false 不能继续循环的接收新请求，只能是退出调用注册过的 defer 方法，
+关闭连接和清理连接池
+```
 

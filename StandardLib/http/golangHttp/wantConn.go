@@ -29,12 +29,31 @@ type wantConn struct {
 }
 
 
+// wantConn 是一个桥梁， 连接 Transport 和  persistConn
+// tryDeliver attempts to deliver pc, err to
+// w and reports whether it succeeded.
+func (w *wantConn) tryDeliver(pc *persistConn, err error) bool {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	if w.pc != nil || w.err != nil {
+		return false
+	}
+	w.pc = pc
+	w.err = err
+	if w.pc == nil && w.err == nil {
+		panic("net/http: internal error: misuse of tryDeliver")
+	}
+	close(w.ready)
+	return true
+}
+
+
+
 // 核心方法2
 // func (t *Transport) dialConn(ctx context.Context, cm connectMethod) (pconn *persistConn, err error) {
 //	pconn = &persistConn{
 
 // 核心方法3
-
 // Get the cached or newly-created connection to either the
 // host (for http or https), the http proxy, or the http proxy
 // pre-CONNECTed to https server. In any case, we'll be ready

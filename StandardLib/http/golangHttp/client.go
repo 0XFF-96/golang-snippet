@@ -10,7 +10,7 @@ type Client struct {
 	Transport RoundTripper
 	CheckRedirect func(req *Request, via []*Request) error
 
-	// 1. 什么情况 cooieJar 会等于 nil ?
+	// 1. 什么情况 cookieJar 会等于 nil ?
 	// 2. 在 send 方法的时候，为什么需要对偶设置 cookie jar
 	// 3. 在请求时， req.AddCookie(cookie)
 	// 4. 在有 response 时， c.Jar.SetCookies(req.URL, rc)

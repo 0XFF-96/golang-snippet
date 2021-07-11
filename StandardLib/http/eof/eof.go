@@ -15,7 +15,6 @@ import (
 //
 //}
 
-
 //func (c *client) SendRequest(method string, url, path string, body io.Reader)([]byte, error) {
 //	// create a request
 //	req, err := http.NewRequest(method, url, body)

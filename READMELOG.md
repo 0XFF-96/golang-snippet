@@ -1,4 +1,4 @@
-### index 
+### INDEX  
 1. http://xiaorui.cc/archives/7172 [readlog]
 2. https://segmentfault.com/a/1190000020086816?utm_source=sf-similar-article
 为什么 resp.Body.Close() 为什么需要 close ?
@@ -9,4 +9,5 @@
 7. 纯文本管理OKR  https://www.bmpi.dev/self/life-in-plain-text/ 
 8. 增加 database/mysql 源码解析的相关内容。
 Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务常见的四大组件
-9. golang 优秀文章集合 https://github.com/ardanlabs/gotraining/blob/master/reading/README.md 
+9. golang 优秀文章集合 https://github.com/ardanlabs/gotraining/blob/master/reading/README.md
+10. https://github.com/ffhelicopter/Go42 开源 go 书籍📚，对常用对框架有总结 

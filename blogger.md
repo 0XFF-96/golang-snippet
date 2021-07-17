@@ -14,6 +14,7 @@
 - 小鹏工程师: https://atbug.com/notes-for-cka-preparation/, https://github.com/addozhang
 - unkonw: http://xiaorui.cc/archives/7172
 - 大彬阿里云工程师: https://lessisbetter.site/about/ 
+- 腾讯工程师: https://github.com/huweihuang 
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool
 - https://www.howie6879.cn/page/2/ https://github.com/howie6879 【不错的小伙伴】

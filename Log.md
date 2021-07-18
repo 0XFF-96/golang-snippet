@@ -21,3 +21,5 @@
 - FrameWork/k8s client go 源码阅读
 - 增加 operation 目录，用于记录一些运维操作 Or 部署一些组件的操作
 - 内存 Cron job 的框架 https://github.com/robfig/cron
+- 欧神的个人代码仓库: https://github.com/changkun/pkg
+- 用 go 语言实现的推荐系统框架 https://github.com/zhenghaoz/gorse

@@ -83,3 +83,9 @@ Aofei Sheng, [Jun 21, 2020 at 2:25:35 PM]:
 汝在 unlock 前把 done 复制了出来，那么 done 改成啥都没问题了
 ```
 
+### Append sorted 
+1. 这几行代码有点意思
+```
+ appendSorted(mux.es, e)
+es    []muxEntry // slice of entries sorted from longest to shortest.
+```

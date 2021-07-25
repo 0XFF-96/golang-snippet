@@ -3,6 +3,8 @@ package context
 import (
 	"context"
 	"fmt"
+	"net/http"
+	"reflect"
 	"testing"
 	"time"
 )
@@ -101,3 +103,27 @@ func TestParentFinishesChild(t *testing.T) {
 	// 因为有些数据结构不导出，所以省略...
 	//
 }
+
+func panic(w http.ResponseWriter, r *http.Request) {
+	server := r.Context().Value(http.ServerContextKey).(*http.Server)
+	v := reflect.ValueOf(*server)
+
+	fmt.Println("here")
+	for i := 0; i < v.NumField(); i++ {
+		if name := v.Type().Field(i).Name; name != "activeConn" {
+			continue
+		}
+		fmt.Println(v.Field(i))
+	}
+}
+
+// From: https://github.com/cch123/golang-notes/blob/master/context.md
+// Bug 被修复了。 http 中的 ctx 还塞了 map，打印会造成 fatal
+func TestTain(t *testing.T) {
+	http.HandleFunc("/", panic)
+	err := http.ListenAndServe("127.0.0.1:9091", nil)
+	if err != nil {
+		fmt.Println(err)
+	}
+}
+

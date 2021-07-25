@@ -10,3 +10,4 @@
 8. Do not pass a nil Context, even if a function permits it. Pass a TODO context if you are unsure about which Context to use.
 9. Use context values only for request-scoped data that transits processes and APIs, not for passing optional parameters to functions.
 
+### Usage 目录中整理常见/有趣的的 Context 使用业务使用方法

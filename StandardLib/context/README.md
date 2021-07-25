@@ -1,7 +1,7 @@
 ### TODO 
 1、继续整理 Context 代码官方文章
 2、写重点函数解析文章
-3、git checkout 一下官方的库，看看有什么东西值得查看。
+3、git checkout 官方的库，看看有什么东西值得查看。
 
 ### 文章
 1、https://blog.xizhibei.me/2019/08/26/golang-the-highly-controversial-context 
@@ -9,6 +9,8 @@
 3、https://zhuanlan.zhihu.com/p/34417106
 4、幕布上之前整理过的文章集合：https://mubu.com/doc3c36FqaM2_ 
 5、曹大的文章：https://github.com/cch123/golang-notes/blob/master/context.md
+6、饶大的文章， https://mp.weixin.qq.com/s/GpVy1eB5Cz_t-dhVC6BJNw
+7、关于 context 的一些争议: https://github.com/golang/go/issues/28342 
 
 ### 官方 Context Example 最佳实践
 1- 用法1: 用于防止 goroutine leak 泄露

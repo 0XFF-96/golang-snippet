@@ -37,7 +37,7 @@ func TestIsVAriableInSameSpace2(t *testing.T){
 }
 
 // 引用的地址, 你能想到的一切都与这个有关。
-// 1、. Because the goroutines being scheduled may run at any point in time in the future,
+// 1、Because the goroutines being scheduled may run at any point in time in the future,
 // it is undetermined what values will be printed from within the goroutine.
 // 2、salutation is transferred to the heap holding a reference to the last value in my string slice
 

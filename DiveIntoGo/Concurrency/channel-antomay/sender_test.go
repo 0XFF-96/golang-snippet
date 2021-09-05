@@ -1,4 +1,4 @@
-package channel
+package channel_antomay
 
 import (
 	"fmt"
@@ -15,16 +15,15 @@ func sender(c chan int) {
 
 func TestSendBlock(t *testing.T) {
 	c := make(chan int, 3)
-
 	go sender(c)
-
-	fmt.Printf("Length of channel c is %v and " +
-		"capacity of channel c is %v\n", len(c), cap(c))
-
+	fmt.Printf("Length of channel-antomay c is %v and " +
+		"capacity of channel-antomay c is %v\n", len(c), cap(c))
 	// read values from c (blocked here)
 	for val := range c {
-		fmt.Printf("Length of channel c after " +
+		fmt.Printf("Length of channel-antomay c after " +
 			"value '%v' read is %v\n", val, len(c))
 	}
 }
+
+
 

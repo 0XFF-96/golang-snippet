@@ -16,3 +16,7 @@
 ### Client-go 的相关应用
 1. https://medium.com/programming-kubernetes/building-stuff-with-the-kubernetes-api-part-4-using-go-b1d0e3c1c899
 2. 简单应用 https://segmentfault.com/a/1190000040318226?utm_source=sf-similar-article
+
+
+### k8s client-go 源码阅读
+1. https://cloudnative.to/blog/client-go-study/

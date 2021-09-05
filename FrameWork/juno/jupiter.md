@@ -6,7 +6,6 @@
 2、对比当前上的服务，和之前发不到一个服务直接日志的
 3、服务发布、依赖分析治理。 
 
-
 api gateway 的相关例子。 
 1、https://github.com/zhuCheer/libra
 
@@ -29,8 +28,6 @@ api gateway 的相关例子。
 
 
 ### 相关？
-
-
 N 和 M 都是可调参数
 1、研究一下 backoff 算法的实现原理。 
 2、”http://github.com/cenkalti/backoff"  这个算法的用处在哪里？

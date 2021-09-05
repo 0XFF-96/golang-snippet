@@ -1,4 +1,4 @@
-package channel
+package channel_antomay
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ func produceSquares(c chan int) {
 		c <- i * i
 	}
 
-	close(c) // close channel
+	close(c) // close channel-antomay
 }
 
 func TestReceiveChan(t *testing.T) {

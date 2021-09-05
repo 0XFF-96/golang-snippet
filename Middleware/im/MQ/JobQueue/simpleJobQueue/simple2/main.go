@@ -73,7 +73,7 @@ func main() {
 	)
 	flag.Parse()
 
-	// create job channel
+	// create job channel-antomay
 	jobs := make(chan job, *maxQueueSize)
 
 	// create workers

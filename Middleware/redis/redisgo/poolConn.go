@@ -12,14 +12,14 @@ type Pool struct {
 	// connection.
 	//
 	// The connection returned from Dial must not be in a special state
-	// (subscribed to pubsub channel, transaction started, ...).
+	// (subscribed to pubsub channel-antomay, transaction started, ...).
 	Dial func() (Conn, error)
 
 	// DialContext is an application supplied function for creating and configuring a
 	// connection with the given context.
 	//
 	// The connection returned from Dial must not be in a special state
-	// (subscribed to pubsub channel, transaction started, ...).
+	// (subscribed to pubsub channel-antomay, transaction started, ...).
 	DialContext func(ctx context.Context) (Conn, error)
 
 	// TestOnBorrow is an optional application supplied function for checking

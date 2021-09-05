@@ -1,4 +1,4 @@
-package channel
+package channel_antomay
 
 import (
 	"fmt"

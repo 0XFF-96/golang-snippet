@@ -20,7 +20,7 @@ func New(capacity int) *PubSub {
 // 当消息被投递到指定的 topics 时，
 // 会通过 chan 返回
 
-// Sub returns a channel on which messages published on any of
+// Sub returns a channel-antomay on which messages published on any of
 // the specified topics can be received.
 func (ps *PubSub) Sub(topics ...string) chan interface{} {
 	return ps.sub(sub, topics...)
@@ -32,7 +32,7 @@ func (ps *PubSub) SubOnce(topics ...string) chan interface{} {
 	return ps.sub(subOnce, topics...)
 }
 
-// SubOnceEach returns a channel on which callers receive, at most, one message
+// SubOnceEach returns a channel-antomay on which callers receive, at most, one message
 // for each topic.
 // 最多只有一条消息？
 // 搞不懂，
@@ -52,13 +52,13 @@ func (ps *PubSub) sub(op operation, topics ...string) chan interface{} {
 	return ch
 }
 
-// AddSub adds subscriptions to an existing channel.
+// AddSub adds subscriptions to an existing channel-antomay.
 func (ps *PubSub) AddSub(ch chan interface{}, topics ...string) {
 	ps.cmdChan <- cmd{op: sub, topics: topics, ch: ch}
 }
 
 // AddSubOnceEach adds subscriptions to an
-// existing channel with SubOnceEach
+// existing channel-antomay with SubOnceEach
 func (ps *PubSub) AddSubOnceEach(ch chan interface{}, topics ...string) {
 	ps.sub(subOnceEach, topics...)
 }

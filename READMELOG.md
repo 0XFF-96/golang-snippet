@@ -1,4 +1,5 @@
-### INDEX  
+### INDEX 
+
 1. http://xiaorui.cc/archives/7172 [readlog]
 2. https://segmentfault.com/a/1190000020086816?utm_source=sf-similar-article
 为什么 resp.Body.Close() 为什么需要 close ?
@@ -10,4 +11,6 @@
 8. 增加 database/mysql 源码解析的相关内容。
 Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务常见的四大组件
 9. golang 优秀文章集合 https://github.com/ardanlabs/gotraining/blob/master/reading/README.md
-10. https://github.com/ffhelicopter/Go42 开源 go 书籍📚，对常用对框架有总结 
+10. https://github.com/ffhelicopter/Go42 开源 go 书籍📚，对常用对框架有总结
+11. https://www.zhihu.com/question/314214128/answer/681836873 如何解决 IM 消息中的时序问题。
+12. grpc deadline 问题。 https://xiaomi-info.github.io/2019/12/30/grpc-deadline/ 

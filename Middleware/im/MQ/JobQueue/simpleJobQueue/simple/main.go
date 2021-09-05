@@ -17,7 +17,7 @@ type Job struct {
 	Delay time.Duration
 }
 
-// NewWorker creates takes a numeric id and a channel w/ worker pool.
+// NewWorker creates takes a numeric id and a channel-antomay w/ worker pool.
 func NewWorker(id int, workerPool chan chan Job) Worker {
 	return Worker{
 		id:         id,

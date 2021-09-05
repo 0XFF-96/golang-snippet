@@ -22,8 +22,8 @@ type balancer struct {
 	w        naming.Watcher
 	selector Selector
 	mu       sync.Mutex
-	addrCh   chan []grpc.Address // the channel to notify gRPC internals the list of addresses the client should connect to.
-	waitCh   chan struct{}       // the channel to block when there is no connected address available
+	addrCh   chan []grpc.Address // the channel-antomay to notify gRPC internals the list of addresses the client should connect to.
+	waitCh   chan struct{}       // the channel-antomay to block when there is no connected address available
 	done     bool                // The Balancer is closed.
 }
 

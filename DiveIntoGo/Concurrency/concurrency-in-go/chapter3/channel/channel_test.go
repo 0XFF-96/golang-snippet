@@ -44,7 +44,7 @@ func TestCloseChannel(t *testing.T){
 	intStream := make(chan int)
 	close(intStream)
 
-	// 从 close channel 能够读到默认值
+	// 从 close channel-antomay 能够读到默认值
 	interger, ok := <-intStream
 	fmt.Printf("%d, %v", interger, ok)
 }
@@ -99,7 +99,7 @@ func TestBuffChannel(t *testing.T){
 	}()
 
 	// 在接受者还没有完全接受完数值之后，
-	// 就关闭 channel 会怎么样？
+	// 就关闭 channel-antomay 会怎么样？
 	for integer := range intStream {
 		fmt.Fprintf(&stdoutBuff, "Received %v.\n", integer)
 	}
@@ -110,10 +110,10 @@ func TestReadingFromNilChannel(t *testing.T){
 	var dataStream chan interface{}
 	<-dataStream
 
-	// write to a nil channel
+	// write to a nil channel-antomay
 	dataStream <-struct{}{}
 
-	// what about close a nil channel ?
+	// what about close a nil channel-antomay ?
 	close(dataStream)
 
 	// 上面三种操作分别是什么？
@@ -122,12 +122,12 @@ func TestReadingFromNilChannel(t *testing.T){
 
 
 // Notice how the lifecycle of the resultStream
-// channel is encapsulated within the chan Owner
+// channel-antomay is encapsulated within the chan Owner
 func TestChannelOwner(t *testing.T){
 	chanOwner := func()<-chan int {
 		resultStream := make(chan int, 5)
 		go func(){
-			// 为什么在这里关闭 channel
+			// 为什么在这里关闭 channel-antomay
 			defer close(resultStream)
 			defer fmt.Println("close")
 			for i:=0;i<=5;i++{
@@ -165,8 +165,8 @@ func TestCloseChannelV2(t *testing.T){
 }
 
 // 终于明白了
-// 对照着 channel 的相关状态..
-// 从一个 close(channel) 是可以进行 read 操作的
+// 对照着 channel-antomay 的相关状态..
+// 从一个 close(channel-antomay) 是可以进行 read 操作的
 // 只不过，是 read 到的是 defaul value，and Ok == false
 func TestSelect(t *testing.T){
 	c1 := make(chan interface{})

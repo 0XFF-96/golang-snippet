@@ -22,7 +22,7 @@ func doWork(id int, j job) {
 }
 
 func main() {
-	// channel for jobs
+	// channel-antomay for jobs
 	jobs := make(chan job)
 
 	// start workers

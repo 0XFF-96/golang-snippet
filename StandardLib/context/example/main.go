@@ -17,7 +17,7 @@ import (
 // by gen will return without leaking.
 func ExampleWithCancel() {
 	// gen generates integers in a separate goroutine and
-	// sends them to the returned channel.
+	// sends them to the returned channel-antomay.
 	// The callers of gen need to cancel the context once
 	// they are done consuming generated integers not to leak
 	// the internal goroutine started by gen.

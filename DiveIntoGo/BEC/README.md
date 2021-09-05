@@ -1,12 +1,10 @@
-
-
 ### What is BCE in golang ?
 
 两种边界检查的型
 1、a[i]
 2、a[i:j]
 
-### Whcih boulds
+### Which boulds
 1、Duplicate checks
 2、Constant slice size with masked index
 3、Constant index
@@ -18,6 +16,5 @@
 1、https://docs.google.com/document/d/1vdAEAjYdzjnPA9WDOQ1e4e05cYVMpqSxJYZT33Cqw2g/edit#heading=h.jhgvmxgsg5ol
 2、https://go-review.googlesource.com/c/go/+/21008
 
-====
 3、https://go.googlesource.com/go/+/master/test/prove.go
 4、https://go.googlesource.com/go/+/master/test/loopbce.go

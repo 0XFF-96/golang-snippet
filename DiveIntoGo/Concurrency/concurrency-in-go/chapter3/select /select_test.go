@@ -6,8 +6,8 @@ import (
 	"time"
 )
 
-// 对照着 channel 的相关状态
-// 从一个 close(channel) 是可以进行 read 操作的
+// 对照着 channel-antomay 的相关状态
+// 从一个 close(channel-antomay) 是可以进行 read 操作的
 // 只不过，是 read 到的是 defaul value，and Ok == false
 func TestSelect(t *testing.T){
 	c1 := make(chan interface{})

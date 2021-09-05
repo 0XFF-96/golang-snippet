@@ -1,4 +1,5 @@
 ### 连接池
+
 1. https://www.cnblogs.com/ivictor/p/5979731.html, MySQL中interactive_timeout和wait_timeout的区别
 2. 什么是 busy-buffer ?
 3. // 来自：go-sql-driver/mysql@1.4.0/packets.go#L27
@@ -13,8 +14,6 @@
 12. https://p.sundayhey.com/w/tech/backend/docs/sql_connection_pool/
 
 ### 从源码提交记录中找有价值的东西
-
-
 
 ### 手写链接池
 1. https://github.com/DMinerJackie/go-demo/tree/master/main/src/custom-pool。

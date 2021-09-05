@@ -1,8 +1,6 @@
-package channel
-
+package channel_antomay
 
 // 计算 goroutine 的相关数量
-
 import (
 	"fmt"
 	"runtime"
@@ -28,7 +26,6 @@ func TestPrint(t *testing.T) {
 	//
 	// 这行代码的重要性？
 	// time.Sleep(time.Second)
-
 	fmt.Println("active goroutines", runtime.NumGoroutine())
 	c <- 1
 	c <- 2

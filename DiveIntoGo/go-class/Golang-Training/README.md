@@ -35,10 +35,8 @@ https://github.com/bilibili/kratos
 [啤酒]Go 进阶训练营免费福利资料
 
 链接:https://pan.baidu.com/s/1O3jKZ-qvXnWkJbaupoVlmQ 密码:33lt
-
 Go 并发编程 140 页干货 PPT：
 链接: https://pan.baidu.com/s/1iWH3_IXaTwwBcTl4h3kz-w 密码: 61ys
-
 大厂软件开发案例：https://con.infoq.cn/archives/?conf=qcons
 
 

@@ -2,8 +2,8 @@
 转自知乎：记录下我马上直接想到的问题，算给自己出面试题做个笔记
 如果要求是CS背景良好、写过20-30万行商用后台代码、1-2年go经验的，我问如下问题：
 1. 1.9/1.10中，time.Now()返回的是什么时间？这样做的决定因素是什么?
- 2. golang的sync.atomic和C++11的atomic最显著的在golang doc里提到的差别在哪里，如何解决或者说规避？
- 3. 1.11为止，sync.RWMutex最主要的性能问题最容易在什么常见场景下暴露。有哪些解决或者规避方法？
+ 2. golang的sync.atomic 和 C++11的 atomic 最显著的在 golang doc 里提到的差别在哪里，如何解决或者说规避？
+ 3. 1.11为止，sync.RWMutex 最主要的性能问题最容易在什么常见场景下暴露。有哪些解决或者规避方法？
  4. 如何做一个逻辑正确但golang调度器(1.10)无法正确应对，进而导致无法产生预期结果的程序。调度器如何改进可以解决此问题？
  5. 列出下面操作延迟数量级(1ms, 10us或100ns等)，cgo调用c代码，c调用go代码，channel在单线程单case的select中被选中，high contention下对未满的buffered channel的写延迟。
  6. 如何设计实现一个简单的goroutine leak检测库，可用于在测试运行结束后打印出所测试程序泄露的goroutine的stacktrace以及goroutine被创建的文件名和行号。

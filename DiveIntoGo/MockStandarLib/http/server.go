@@ -18,8 +18,6 @@ type muxEntry struct {
 	pattern string
 }
 
-
-
 // A Server defines parameters for running an HTTP server.
 // The zero value for Server is a valid configuration.
 type Server struct {

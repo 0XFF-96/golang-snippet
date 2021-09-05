@@ -7,7 +7,7 @@ import (
 
 // try readability first
 // and avoid premature optimization
-// or-done channel
+// or-done channel-antomay
 // select default select
 // 需要处理有错误、done、
 // goroutine 被 canceled 的情况

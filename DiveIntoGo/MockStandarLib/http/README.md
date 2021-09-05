@@ -1,6 +1,7 @@
 ### Mutex 
 
 一、什么是 ServeMux 结构？
+
 // ServeMux is an HTTP request multiplexer.
 // It matches the URL of each incoming request against a list of registered
 // patterns and calls the handler for the pattern that
@@ -47,4 +48,3 @@
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", WithLogging(svc))
 ```
-	

@@ -8,7 +8,7 @@ import (
 // As a reminder, a
 // generator for a pipeline is any function that
 // converts a set of discrete values into a
-// stream of values on a channel.
+// stream of values on a channel-antomay.
 func TestHandyGenerators(t *testing.T) {
 	repeat := func(
 		done <-chan interface{},

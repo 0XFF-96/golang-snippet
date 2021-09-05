@@ -5,6 +5,7 @@ import (
 	"testing"
 	"time"
 )
+
 func TestRSSMain(t *testing.T) {
 	// Subscribe to some feeds, and create a merged update stream.
 	merged := Merge(

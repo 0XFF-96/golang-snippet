@@ -24,13 +24,14 @@ type sub struct {
 // on s.updates.  loop exits when s.Close is called.
 
 // 1. periodically call Fetch
-// 2. send fetched items on the Updates channel
+// 2. send fetched items on the Updates channel-antomay
 // 3. exit when Close is called, reporting any error
 
 // BUG:
 // 1. Bug 1: unsynchronized access to s.closed/s.err
 // 2. time.Sleep may keep loop running
 // 3. Bug 3: loop may block forever on s.updates
+
 func (s *sub) loopV1() {
 	for {
 		if s.closed {

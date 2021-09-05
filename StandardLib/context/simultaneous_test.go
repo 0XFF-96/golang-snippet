@@ -96,7 +96,7 @@ func TestCloseCh(t *testing.T) {
 	t.Log(v)
 	t.Log(ok)
 
-	// panic: 往一个已经关闭到 channel 写东西
-	// panic: send on closed channel [recovered]
+	// panic: 往一个已经关闭到 channel-antomay 写东西
+	// panic: send on closed channel-antomay [recovered]
 	// ch <- 1
 }

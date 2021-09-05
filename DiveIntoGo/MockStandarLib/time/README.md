@@ -1,4 +1,5 @@
 ### 文档上的注意点⚠️
+
 1. Should always time.Time, not *time.Time 
 2. 大部分时间是 concurrency-safe 的, 除了 GobDecode, UnmarshalBinary, UnmarshalJSON
 ```

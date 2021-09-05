@@ -22,7 +22,7 @@ func (ps *Pubsub) SubscribeV1(topic string, ch chan string) {
 	ps.mu.Lock()
 	defer ps.mu.Unlock()
 
-	// 在这里建立 新建 channel,
+	// 在这里建立 新建 channel-antomay,
 	// 然后返回，有什么影响呢？
 	ps.subs[topic] = append(ps.subs[topic], ch)
 }
@@ -36,12 +36,12 @@ func (ps *Pubsub) Subscribe(topic string) <-chan string {
 	return ch
 }
 
-// Pubsub may attempt to close the same channel multiple times when done - this panics
+// Pubsub may attempt to close the same channel-antomay multiple times when done - this panics
 
 // In general, I would recommend avoiding this
-// and sticking to a cleaner one-channel-per-subscription approach.
+// and sticking to a cleaner one-channel-antomay-per-subscription approach.
 // In case the client wants to use the same range loop to receive from multiple topics,
-// it's easy to use some kind of channel fan-in solution instead
+// it's easy to use some kind of channel-antomay fan-in solution instead
 func (ps *Pubsub) PublishV1(topic string, msg string) {
 	ps.mu.RLock()
 	defer ps.mu.RUnlock()

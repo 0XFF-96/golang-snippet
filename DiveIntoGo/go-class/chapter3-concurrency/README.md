@@ -2,13 +2,11 @@
 1. http://github.com/da440dil/go-workgroup 
 2.
 
-
 ### NOTE
 1. 一个 gorountine 应该是完全由调用者管理的
 2. 
 
-
-### Golang 内存模型
+### Golang 内存模型【✅】
 1. https://golang.org/ref/mem
 2. 什么是内存模型？
 3. Memory Reordering
@@ -18,12 +16,9 @@
 
 ### Mutex
 1. mutex 的三个实现方式？
-2。
-
 
 ### 如何使用 errgroup 
 1. https://github.com/go-kratos/kratos/tree/master/pkg/sync/errgroup
-2. 
 
 ### sync.Pool 
 1. 放进 Pool 中的对象，会在说不准什么时候被回收掉。
@@ -34,10 +29,9 @@
 
 
 ### Chan 同步模型
-
 1、Timing out
 2、Moving on
-3、Pipeline
+3、Pipeline、streaming
 4、Fan-out, Fan-in
 5、Cancellation
 6、Close 先于 Receive 发生(类似 Buffered)。
@@ -49,7 +43,6 @@ https://blog.golang.org/concurrency-timeouts
 https://blog.golang.org/pipelines
 https://talks.golang.org/2013/advconc.slide#1
 https://github.com/go-kratos/kratos/tree/master/pkg/sync
-
 https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
 
 ```
@@ -71,13 +64,9 @@ Question buffers that are larger than one and measure for size.
     Find the smallest buffer possible that provides good enough throughput.
 ```
 
-
-
 ### 利用 Context 染色
 1、染色，API 重要性，Trace
 2、https://github.com/go-kratos/kratos/blob/master/pkg/net/metadata/key.go
-
-
 
 ### REFERENCE 
 
@@ -92,7 +81,6 @@ https://cch123.github.io/ooo/
 https://blog.golang.org/codelab-share
 https://dave.cheney.net/2018/01/06/if-aligned-memory-writes-are-atomic-why-do-we-need-the-sync-atomic-package
 http://blog.golang.org/race-detector
-
 https://dave.cheney.net/2014/06/27/ice-cream-makers-and-data-races
 https://www.ardanlabs.com/blog/2014/06/ice-cream-makers-and-data-races-part-ii.html
 https://medium.com/a-journey-with-go/go-how-to-reduce-lock-contention-with-the-atomic-package-ba3b2664b549
@@ -102,7 +90,6 @@ https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
 https://medium.com/a-journey-with-go/go-buffered-and-unbuffered-channels-29a107c00268
 https://medium.com/a-journey-with-go/go-ordering-in-select-statements-fd0ff80fd8d6
 https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
-
 https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html
 https://www.ardanlabs.com/blog/2013/10/my-channel-select-bug.html
 https://blog.golang.org/io2013-talk-concurrency
@@ -115,8 +102,6 @@ https://blogtitle.github.io/go-advanced-concurrency-patterns-part-3-channels/
 https://www.ardanlabs.com/blog/2013/05/thread-pooling-in-go-programming.html
 https://www.ardanlabs.com/blog/2013/09/pool-go-routines-to-process-task.html
 https://blogtitle.github.io/categories/concurrency/
-
-
 https://medium.com/a-journey-with-go/go-context-and-cancellation-by-propagation-7a808bbc889c
 https://blog.golang.org/context
 https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
@@ -127,7 +112,6 @@ https://blog.golang.org/context
 https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
 https://golang.org/doc/effective_go.html#concurrency
 https://zhuanlan.zhihu.com/p/34417106?hmsr=toutiao.io
-https://talks.golang.org/2014/gotham-context.slide#1
-
+https://talks.golang.org/2014/gotham-context.slide#1s
 https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39
 

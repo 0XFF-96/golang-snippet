@@ -6,13 +6,12 @@
 2. 如何利用 error group 并行操作。 
 https://bionic.fullstory.com/why-you-should-be-using-errgroup-withcontext-in-golang-server-handlers/
 
-
 3. Codewalk: Share Memory By Communicating
 如何写一个外部资源，状态监听器的例子。 
 https://golang.org/doc/codewalk/sharemem/
-
 
 3. 20 张图-go-concurrency model 
 1. https://learnku.com/go/t/39490
 2. https://talks.golang.org/2013/advconc.slide#41
 3. https://talks.golang.org/2012/concurrency.slide#57
+4. http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/

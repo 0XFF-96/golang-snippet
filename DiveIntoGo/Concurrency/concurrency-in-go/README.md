@@ -1,7 +1,7 @@
 ### 知识索引
 
 ### Chapter1: 锁
-    - 程序发送死锁
+    - 程序发生死锁
     - 程序发生活锁
     - 程序发生饥饿
     - 产生上面的情况的条件？
@@ -20,16 +20,16 @@
     - 使用 sync.Pool 减少对象的分配
     
 ### Chapter4 
-    - confinement 限制 
-    - preventLeak
+    - confinement 限制
+    - preventLeak , 如何限制泄露
     - channel 的 error handler 
     - pipeline 怎么区分流处理和批处理 （ discrete or stream / is preemptable?)
     - generator 的写法
     - repeat 函数的相关写法 
     - Little's Law， 如何衡量一个 queue 的质量
-    - 
 
-### 结论
+
+### 结论 and Prompts 
  - 	wg.Add(1) 一定要发送在 goroutine 之外，避免调用时机的不确定引起
  - 
 
@@ -39,9 +39,7 @@
 - https://www.process.st/littles-law/
 
 
-
 ### 有趣的文章
-
 http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/
 
 这篇文章，以 Accept tcp 连接为例子，从四个方面：

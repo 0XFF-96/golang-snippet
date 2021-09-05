@@ -15,6 +15,9 @@
 - unkonw: http://xiaorui.cc/archives/7172
 - 大彬阿里云工程师: https://lessisbetter.site/about/ 
 - 腾讯工程师: https://github.com/huweihuang 
+- 喜马拉雅工程师：https://qiankunli.github.io/ 
+- unknown: https://www.codedump.info/page/about/ 主要是存储方向的 和 IM 
+
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool
 - https://www.howie6879.cn/page/2/ https://github.com/howie6879 【不错的小伙伴】

@@ -1,11 +1,8 @@
 ### 应用实践
 
-
 ### 官方文档
 1. https://github.com/prometheus/prometheus
 2. go-common 里面的用法
-
-
 
 ### 参考资料
 1. 用法介绍: https://promcon.io/2017-munich/slides/best-practices-and-beastly-pitfalls.pdf

@@ -1,5 +1,9 @@
 ### 应用实践
 
+1. 来自 go-common 应用级别的实践
+2. 来自 go-zero 框架级别的代码
+3. 来自 jaeger 源码，开源组件的实践方案
+
 ### 官方文档
 1. https://github.com/prometheus/prometheus
 2. go-common 里面的用法

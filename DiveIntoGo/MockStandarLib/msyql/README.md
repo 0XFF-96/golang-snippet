@@ -17,4 +17,23 @@
 
 ### 手写链接池
 1. https://github.com/DMinerJackie/go-demo/tree/master/main/src/custom-pool。
-2. mysql 通讯协议。
+2. mysql 通讯协议
+
+### Transaction 事务
+1. https://www.topgoer.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/go%E6%93%8D%E4%BD%9Cmysql/mysql%E4%BA%8B%E5%8A%A1.html
+2. https://segmentfault.com/a/1190000023089223
+3. https://learnku.com/articles/46753
+4. [重点] https://stackoverflow.com/questions/16184238/database-sql-tx-detecting-commit-or-rollback 
+5. [重点的中文翻译] http://www.mspring.org/2019/03/18/Golang-transaction-%E4%BA%8B%E5%8A%A1%E4%BD%BF%E7%94%A8%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/ 
+6. 
+7. people, http://www.mspring.org/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/ 
+8. 入门基本指南， https://www.sohamkamani.com/golang/sql-transactions/ 
+9. 官方文档， https://golang.org/doc/database/execute-transactions
+10. https://dev.to/techschoolguru/a-clean-way-to-implement-database-transaction-in-golang-2ba [implement way]
+11. https://gist.github.com/pseudomuto/0900a7a3605470760579752fcf0fc2b7
+12. https://medium.com/@jfeng45/go-microservice-with-clean-architecture-transaction-support-61eb0f886a36
+13. https://jmoiron.github.io/sqlx/
+
+### 事务总结
+1. 
+

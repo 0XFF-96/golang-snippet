@@ -1,7 +1,10 @@
 ### 官方文档笔记
+
 1. an *sql.DB, it should be possible to share that instance between
      multiple goroutines, without any extra synchronization
 2.
+
+
 ### 源码学习笔记
 1. Driver interface, Driver is the interface that must be implemented by a database
 

@@ -1,4 +1,5 @@
 ### k8s 日志架构
+
 一、集群级日志
 在集群中，日志应该具有独立的存储和生命周期，与节点、Pod 或容器的生命周期相独立。 
 2、需要一个独立的后端用于存储、分析和查询日志。
@@ -36,7 +37,6 @@ https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/?spm=5176.
 5、部署日志收集代理（fluent-bit）
 持ClusterRolebinding等资源类型上的管理操作
 6、kubectl get statefulsets,deployments,services,ingress,pvc
-
 
 ### 资源
 1. https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/#sidecar-container-with-a-logging-agent

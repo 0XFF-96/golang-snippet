@@ -11,3 +11,6 @@
 9. 什么是 config-map
 10. 什么是 安全 Context ?
 11. k8s 网络模型
+12. 容器设计模式以及 Pod 
+13. 理解和使用 ServiceAccount 
+14. k8s 新一代监控架构

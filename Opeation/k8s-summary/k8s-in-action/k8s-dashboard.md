@@ -1,4 +1,5 @@
 ### 什么是 k8s dashboard 
+
 1、kubectl get svc kubernetes-dashboard -n kube-system 
 2、配置 kubeconfig 认证， 用于登录 k8s-dashboard 
 如何配置一个仅具有特定名称空间管理权限的登录账号

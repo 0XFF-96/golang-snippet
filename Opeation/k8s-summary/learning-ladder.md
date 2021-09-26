@@ -1,4 +1,5 @@
 ### Resource-相关资源
+
 1、http://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md api-convention 
 
 2、[www.qikqiak.com/post/how-to-learn-kubernetes/?](http://www.qikqiak.com/post/how-to-learn-kubernetes/?) 
@@ -19,7 +20,7 @@
 ### 大纲
 1、可观测性——监控与日志
 2、Kubernetes API编程范式
-3、Kubernetes API编程利器：Operator和Operator Framework
+3、Kubernetes API编程利器：Operator 和 Operator Framework
 4、多容器 POD 设计模式及应用
 5、容器存活状态就绪状态探测
 6、如何安装并部署一个真正的 k8s 集群环境？

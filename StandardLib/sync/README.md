@@ -14,7 +14,8 @@ from:https://cloud.tencent.com/developer/article/1539049
 1. https://juejin.im/post/6844904100287496206 
 2. 针对 sync map 的 curd 详细流程图：https://developer.aliyun.com/article/741441
 
-官方解析在以下两种情况下使用 sync.map 会更好
+官方解析在以下两种情况下使用 sync.map 会更好。 
+
 ```
 // The Map type is optimized for two common use cases: 
 (1) when the entry for a given key is only ever written once but read many times, as in caches that only grow,
@@ -28,7 +29,6 @@ contention compared to a Go map paired with a separate Mutex or RWMutex.
 1. stabel key 
 2. disjoint stores 
 3. concurrent loops 
-
 
 1. 并发安全的 map 
 2. 用于针对 value 是 `interface{}` 类型的场景下

@@ -7,8 +7,6 @@
 - https://segmentfault.com/a/1190000008672912
 - https://mp.weixin.qq.com/s?__biz=MzUzNTY5MzU2MA==&mid=2247486329&idx=1&sn=04cf6ab2613ac1174808fa727b18212f&chksm=fa80daeecdf753f8c4625bc522bce5960383da9eadf2edd5ef57a8ae384c99f7ebb45d43e397&token=1402983166&lang=zh_CN&scene=21#wechat_redirect
 
-
-
 ### grpc 源码解读
 1. https://learnku.com/articles/35336
 
@@ -42,4 +40,3 @@ https://github.com/grpc/grpc/blob/master/doc/load-balancing.md
 
 ### FAQ 
 - 想 eruaka 和 b 站的 discovery 方案和 B 站的方案是属于同一类型的吗？ 它们之间的优缺点是什么？（AP？）（CAP ?)
-- 

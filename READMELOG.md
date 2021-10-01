@@ -18,3 +18,10 @@ Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务
 
 ### 关于微服务
 1.  
+
+
+### 关于产品
+1. 认知偏差知识手册[from-bytedance] https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf#
+近年来看到过的最好的产品方案指导指南。 
+
+2.

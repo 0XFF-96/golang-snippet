@@ -38,23 +38,19 @@ https://github.com/bilibili/kratos
 Go 并发编程 140 页干货 PPT：
 链接: https://pan.baidu.com/s/1iWH3_IXaTwwBcTl4h3kz-w 密码: 61ys
 大厂软件开发案例：https://con.infoq.cn/archives/?conf=qcons
-
 1、https://www.yuque.com/docs/share/6bb19a9c-99d3-414b-bd69-bdb788415b30?# 
-2、这里是 毛剑的…. 
 
 ### 相关？
 
-1、go 资深工程师课程-配套文档。
-2、企业级网关系统相关。
-3、秒杀-相关。
-4、rocksdb + raft 做 kv 系统相关。
-5、需要知道后端一些重要常量。 
+1、go 资深工程师课程-配套文档
+2、企业级网关系统相关
+3、秒杀-相关
+4、rocksdb + raft 做 kv 系统相关
+5、需要知道后端一些重要常量
 6、缓存、存储、队列 三个最重要的中间价之一。
-7、7 days- https://github.com/geektutu/7days-golang 。 
-8、作为一个中间件：https://github.com/nikoksr/notify 。 
-9、定时查看 trending ， 看看别人在做一些什么工作。 
-有趣的库：
-1、https://github.com/dapr/dapr 。 
+7、7 days- https://github.com/geektutu/7days-golang  
+8、作为一个中间件：https://github.com/nikoksr/notify  
+9、定时查看 trending  看看别人在做一些什么工作
 
 
 ### 播放历史系统设计

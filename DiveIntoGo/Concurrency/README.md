@@ -15,3 +15,4 @@ https://golang.org/doc/codewalk/sharemem/
 2. https://talks.golang.org/2013/advconc.slide#41
 3. https://talks.golang.org/2012/concurrency.slide#57
 4. http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/
+

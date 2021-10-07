@@ -1,0 +1,5 @@
+package unsafe
+
+func main() {
+
+}

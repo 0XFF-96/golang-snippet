@@ -24,7 +24,6 @@ func TestVisualizeFloat(t *testing.T) {
 	fmt.Printf("Bit pattern: %s \n", binary)
 
 	// binary to represent value
-
 	bias := 127
 	sign := bits & ( 1 << 31)
 	exponentRaw := int(bits >> 23)
@@ -57,7 +56,7 @@ func TestVisualizeFloat(t *testing.T) {
 }
 
 func TestIsInt(t *testing.T) {
-	isInt()
+	// isInt()
 }
 
 // 浮点数格式，整数

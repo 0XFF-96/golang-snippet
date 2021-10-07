@@ -7,12 +7,10 @@
 5. https://www.kanzhun.com/msh/?ka=click_top_tab_interview [看准]
 6. https://learnku.com/articles/51080
 
-
 ### golang 
 1. https://my.oschina.net/u/3421040/blog/3274495 
 2. https://studygolang.com/articles/16751
 3. https://zhuanlan.zhihu.com/p/77425984[cue]
-
 
 ### questions 
 1. https://github.com/yqchilde/Golang-Interview

@@ -11,7 +11,6 @@ func (d *dataContainer) WatchCh() <-chan interface{} {
 }
 ```
 
-
 ### notification channel 的设计
 
 - 这个 5 个 channel 的处理有什么问题？

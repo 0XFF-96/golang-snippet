@@ -54,6 +54,5 @@ func TestM(t *testing.T) {
 	fmt.Printf("empty: eface._type = %#x, eface.data = %#x\n", emptyEface._type, emptyEface.data)
 }
 
-
 // rtype must be kept in sync with ../runtime/type.go:/^type._type.
 //《快学 Go 语言第十五课——反射》

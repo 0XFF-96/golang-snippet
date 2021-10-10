@@ -49,12 +49,10 @@ func NewDao() Repository {
 // 不行，空指针
 func TestDao(t *testing.T){
 	repo := NewDao()
-
 	t.Log(repo.RepoFunc2())
 	t.Log(repo.TestStringFunc())
 }
 
 
 func TestDao2(t *testing.T) {
-
 }

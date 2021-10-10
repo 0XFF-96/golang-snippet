@@ -12,12 +12,13 @@ reflect.ValueOf.Elem => 获取指针指向的对象、获取 map 的 val，获�
 
 ### reflect 三定律 
 
-1、Reflection goes from interface value to reflection object.
-2、Reflection goes from reflection object to interface value.
-3、To modify a reflection object, the value must be settable.
+1、Reflection goes from [interface value] to [reflection object].
+2、Reflection goes from [reflection object] to [interface value].
+3、To modify a reflection object, the value must be [settable].
 
-总结一下就是：接口型变量 和 反射类型对象可以相互转化。 
-## 基本类型
+总结一下就是：接口型变量 和 反射类型对象可以相互转化。
+ 
+## 基本类型 basic type 
 
 bool, int, uint, uintptr, float, complex
 
@@ -49,7 +50,6 @@ reflect.ValueOf(a).SetMapIndex(reflect.ValueOf("abc"), reflect.ValueOf(1))
 ```
 
 reflect.Type 是个 interface{} 类型，如果要按照类型做 switch，一定要按照 reflect.Kind 来做，因为 Kind 是枚举值。
-
 当然，也可以使用 type switch，具体参考 elasticsql。
 
 ## struct type
@@ -80,13 +80,7 @@ fmt.Printf("%#v\n", a)
 fmt.Printf("%#v\n", b)
 ```
 
-array :
 
-```go
-```
-
-## ptr type
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg5ODA4NDEwLDY4MTA3NjE0OSw2ODk4MD
-g0MTBdfQ==
--->
+### REFERENCE 
+1. 反射官方文档
+2. 

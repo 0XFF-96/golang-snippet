@@ -15,6 +15,9 @@ Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务
 11. https://www.zhihu.com/question/314214128/answer/681836873 如何解决 IM 消息中的时序问题。
 12. grpc deadline 问题。 https://xiaomi-info.github.io/2019/12/30/grpc-deadline/
 13. golang 内存模型 By Russ Cox https://research.swtch.com/mm
+14. http://arthurchiao.art/blog/rbac-as-it-meant-to-be-zh/ [五🌟]
+基于角色的访问控制（RBAC）：演进历史、设计理念及简洁实现（Tailscale, 2021）
+15. tech interview handbook, https://github.com/yangshun/tech-interview-handbook
 
 ### 关于微服务
 1.  

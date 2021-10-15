@@ -15,3 +15,16 @@ Most of the code here are inspired by different repos that you can find referenc
 - 3、https://www.jianshu.com/p/1f1513c08092
 - 4、博客https://github.com/Chasiny/Blog/tree/master/blog/go
 
+### Ref
+
+1、ad-java: https://github.com/doocs/advanced-java 。 
+2、cs-course : https://github.com/ossu/computer-science 。 
+3、http://github.com/xingshaocheng/architect-awesome/blob/master/README.md 【架构图】
+4、k8s -network : https://github.com/nleiva/kubernetes-networking-links 。 
+5、https://github.com/kelseyhightower/kubernetes-the-hard-way
+6、k8s the hard way : https://github.com/kelseyhightower/kubernetes-the-hard-way/tree/master/docs 。 
+7、https://mp.weixin.qq.com/s/iT-bURMpct7Mv2rl-MHKIg
+8、interview qa: https://github.com/DopplerHQ/awesome-interview-questions
+9、interview qa : https://github.com/jwasham/coding-interview-university 
+10、https://github.com/kdn251/interviews
+11、remote https://github.com/remoteintech/remote-jobs

@@ -56,3 +56,22 @@ func TestM(t *testing.T) {
 
 // rtype must be kept in sync with ../runtime/type.go:/^type._type.
 //《快学 Go 语言第十五课——反射》
+
+
+// Nil or Not nil ?
+
+type TestStruct struct{}
+
+// 调用 NilOrNot 函数时发生了隐式的类型转换
+func NilOrNot(v interface{}) bool {
+	return v == nil
+}
+
+func TestNotNil(t *testing.T) {
+	var s *TestStruct
+	fmt.Println(s == nil)      // #=> true
+	fmt.Println(NilOrNot(s))   // #=> false
+}
+
+// interface mock
+// https://www.cnblogs.com/qcrao-2018/p/10766091.html

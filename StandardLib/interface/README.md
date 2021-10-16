@@ -5,6 +5,10 @@ https://segmentfault.com/a/1190000006190038 6-22
 2、https://research.swtch.com/interfaces [未看]
 3、https://juejin.im/post/5a6873fd518825734501b3c5 [未看，对接口对深入理解]
 4、http://legendtkl.com/2017/06/12/understanding-golang-interface/
+5、https://www.infoq.cn/article/s9EJ0VLVKP8sSIQYi4X8?utm_source=related_read_bottom&utm_medium=article 
+- 反射三定律
+- 反射的应用场景
+- 反射需要注意的事项（未导出的类型） 
 
 --==== 未看 ---===
 1、https://juejin.im/post/5d31884af265da1baa1eae79
@@ -43,7 +47,7 @@ https://www.youtube.com/watch?v=F4wUrj6pmSI&t=123s
 2. https://stackoverflow.com/questions/29971363/golang-reflection-on-interface-vs-pointer-to-interface
 
 ### 结构体内嵌 interface 的用法[视频]
-1、https://mubu.com/app/edit/home/2IHkQXa2J_ 。 
+1、https://mubu.com/app/edit/home/2IHkQXa2J_ 
 
 
 ### 为什么 reflect 会造成性能下降？

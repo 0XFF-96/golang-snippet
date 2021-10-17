@@ -18,7 +18,8 @@ Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务
 14. http://arthurchiao.art/blog/rbac-as-it-meant-to-be-zh/ [五🌟]
 基于角色的访问控制（RBAC）：演进历史、设计理念及简洁实现（Tailscale, 2021）
 15. tech interview handbook, https://github.com/yangshun/tech-interview-handbook
-
+16. mysql 事务机制的实现 https://www.cnblogs.com/rickiyang/p/13652664.html 
+（近期看过的除了极客时间上面，最好的 mysql 文章了）
 ### 关于微服务
 1.  
 

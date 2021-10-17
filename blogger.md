@@ -18,7 +18,8 @@
 - 喜马拉雅工程师：https://qiankunli.github.io/ 
 - unknown: https://www.codedump.info/page/about/ 主要是存储方向的 和 IM
 - 编程cyhone https://github.com/chenyahui https://www.cyhone.com/page/6/ 
-- 携程工程师： http://arthurchiao.art/articles-zh/ 
+- 携程工程师： http://arthurchiao.art/articles-zh/
+- 云原生开发工程师： https://blog.tianfeiyu.com/about/ (主要是云原生方向) 
 
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool

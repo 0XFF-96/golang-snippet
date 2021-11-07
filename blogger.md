@@ -1,7 +1,6 @@
 ### RSS 
-- 能不能对于自己关注的博主进行 RSS ?
 
-### Golang 
+### Golang Engineer 
 - 即刻工程师： https://blog.joway.io/posts/golang-common-pool/
 - 腾讯工程师:  https://pandaychen.github.io/page5/
 - 头条工程师: https://halfrost.com/ [冰霜之地]

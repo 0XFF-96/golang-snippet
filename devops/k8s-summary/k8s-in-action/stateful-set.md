@@ -28,7 +28,6 @@ ClusterIP 模式的 Service 和 Headless Service 的区别？Service是在逻辑
 2、保持 Pod 固定唯一网络标识， Pod 之间互相能以 podName.serviceName.namesapce.svc.cluster.local  ， 通信，不担心 Pod 被重新调度到其他节点后的 IP 变化。 
 3、保持实的存储状态， spec.volumns, host path 类型的 Volumn 基于宿主机目录的， Pod 发生重新调度后，就不能恢复了。 所以，此功能需要使用集群存储资源， PV 和 PVC 。 分布式存储项目 （Ceph、GFS、HDFS 等） 
 
-
 ### Ref
 
 1. https://mp.weixin.qq.com/s/0rSutWfY_ENpvIidbp8ePw网管叨bi叨

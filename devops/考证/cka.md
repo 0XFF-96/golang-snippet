@@ -52,3 +52,10 @@ gclid=CjwKCAjww-CGBhALEiwAQzWxOkiuSrRHmIgtB-rEjO-wrZv44l5RqpBCGo7vMTm00CX0F6mLzT
 2、https://xiaozhou.net/tips-to-pass-the-ckad-exam-2020-09-26.html
 
 3、云原生架构架构实践， https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html 
+
+
+### 什么是 cka ?
+
+1、https://start.aliyun.com/course?id=0iNJ9RDH
+2、CKAD（Certified Kubernetes Application Developer）认证胜券在握！轻松掌握Kubernetes系统的运行机制 ，将传统应用迁往Kubernetes
+3、CKA：全称为“Kubernetes认证管理员（Certified Kubernetes Administrator）”，侧重于管理和操作Kubernetes集群，主要涉及到创建、管理集群，以及集群故障排查等

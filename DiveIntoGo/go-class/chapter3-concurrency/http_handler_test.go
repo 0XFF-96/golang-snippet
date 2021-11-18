@@ -34,6 +34,7 @@ func TestDelegation(t *testing.T){
 // 3. 一般抽象的写法
 func serveAPP() {
 }
+
 func serveDebug() {
 }
 

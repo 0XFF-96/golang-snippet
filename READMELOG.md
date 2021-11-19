@@ -22,7 +22,8 @@ Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务
 （近期看过的除了极客时间上面，最好的 mysql 文章了）
 17. golang 文档的风格的注释， https://github.com/fluhus/godoc-tricks
 18. golang 满血补给包 https://github.com/0voice/Introduction-to-Golang 
-
+19. 如何阅读源码？https://www.codedump.info/post/20200605-how-to-read-code-v2020/
+20. go-mirco 的连接池实现， https://github.com/asim/go-micro/blob/94bd1025a64eaaba1d89189891ef49f3ab5eee7f/util/pool/default.go 。 
 ### 关于微服务
 1.  
 

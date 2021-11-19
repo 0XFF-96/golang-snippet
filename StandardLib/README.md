@@ -23,7 +23,7 @@
 7、简单的需求， 我想找到  [src](https://go.googlesource.com/go/+/refs/tags/go1.16.5/src) / [database](https://go.googlesource.com/go/+/refs/tags/go1.16.5/src/database?autodive=0) / sql ，将这个目录当作一个 git repo 下载下来， 然后看到这个目录下面的历史 changelog 和其他人曾经提交过的代码变化。 
 8、contribute guide, https://golang.org/doc/contribute 。   
 9、理清数据结构之间的依赖关系，最好能够画出图来。 （先不要去管行为、方法） 能够将数据结构可视化。
-
+10、https://www.codedump.info/post/20200605-how-to-read-code-v2020/
 
 ### Golang 源码阅读列表
 （如何进行记录） ？

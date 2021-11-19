@@ -15,10 +15,12 @@
 - 大彬阿里云工程师: https://lessisbetter.site/about/ 
 - 腾讯工程师: https://github.com/huweihuang 
 - 喜马拉雅工程师：https://qiankunli.github.io/ 
-- unknown: https://www.codedump.info/page/about/ 主要是存储方向的 和 IM
+- unknown/老C: https://www.codedump.info/page/about/ 主要是存储方向的 和 IM
 - 编程cyhone https://github.com/chenyahui https://www.cyhone.com/page/6/ 
 - 携程工程师： http://arthurchiao.art/articles-zh/
 - 云原生开发工程师： https://blog.tianfeiyu.com/about/ (主要是云原生方向) 
+- bytedance 工程师： https://blog.betacat.io/post/2020/08/how-to-mount-etcd-as-a-filesystem/
+- unknow, https://drmingdrmer.github.io/tech/bla/2018/08/26/programmer-should-know.html 
 
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool

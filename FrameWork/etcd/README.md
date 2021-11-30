@@ -3,7 +3,6 @@
 see more info https://github.com/douyu/jupiter/pull/117/files
 
 
-
 ### REFERENCE
 
 1. raft-example, https://www.codedump.info/post/20180922-etcd-raft/

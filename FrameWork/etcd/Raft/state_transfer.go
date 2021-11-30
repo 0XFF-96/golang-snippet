@@ -75,7 +75,6 @@ func (r *raft) becomeLeader() {
 	// behavior of allowing one entry larger than quota if the current
 	// usage is zero.
 	r.reduceUncommittedSize([]pb.Entry{emptyEnt})
-	r.logger.Infof("%x became leader at term %d", r.id, r.Term)
 }
 
 

@@ -26,7 +26,7 @@
 - http://xiaorui.cc/ https://github.com/rfyiamcool
 - https://www.howie6879.cn/page/2/ https://github.com/howie6879 【不错的小伙伴】
 - https://learnku.com/articles/54298 【将 grpc 源码分析得不错的小伙伴】 
-- https://github.com/awei0217【grpc 源码】， 基础库代码https://github.com/awei0217/go_common
+- https://github.com/awei0217【grpc 源码】， 基础库代码 https://github.com/awei0217/go_common
 
 ### 技术团队
 - 即刻技术团队

@@ -2,7 +2,6 @@
 
 1. 五面字节： https://leetcode-cn.com/circle/discuss/A0YstA/ 
 2. https://learnku.com/articles/49231 
-3. [面圈](面试网站）http://www.mianshigee.com/interview/t13
 4. https://gocn.vip/topics/10926 [实习面经历]
 5. https://www.kanzhun.com/msh/?ka=click_top_tab_interview [看准]
 6. https://learnku.com/articles/51080

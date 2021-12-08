@@ -1,4 +1,5 @@
 ### Errors 案例分析
+
 1. 用一个例子体会一下 `sql No rows error 的烦人之处`
 2. 用一个优化的例子，看看上面的代码如何优化。 
 3. 一眼看出问题所在， errors.WithStack(throwError()) 
@@ -61,8 +62,6 @@ func MiddleMethod2()( err error ){
 
 
 Why ? 为什么呢？ 需要从实现原理上解析这种差异， 
-
-
 
 到此为止，我们基本上能够解决一大半头痛的问题了。 
 - 重复打印日志。

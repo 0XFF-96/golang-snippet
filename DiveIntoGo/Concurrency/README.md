@@ -16,3 +16,10 @@ https://golang.org/doc/codewalk/sharemem/
 3. https://talks.golang.org/2012/concurrency.slide#57
 4. http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/
 
+
+### 常见的 concurrency pattern 
+1. https://github.com/lotusirous/go-concurrency-patterns
+2. https://github.com/gobridge/concurrency-patterns
+3. https://github.com/mridul-sahu/golang-concurrency-patterns
+4. https://github.com/alextanhongpin/go-advance-concurrency
+5. https://golangcode.com/

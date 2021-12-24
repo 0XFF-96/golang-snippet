@@ -1,4 +1,3 @@
-
 ### Wait-For-ready 
 
 // WaitForReady configures the action to take when an RPC is attempted on broken
@@ -20,7 +19,6 @@ when receiving an `Unavailable` status code.
 
 - 这个例子没有成功，期望是调用一次 client 代码，然后能够检测到发送 3 次包的。 
 - 
-
 
 ### Reflection 
 

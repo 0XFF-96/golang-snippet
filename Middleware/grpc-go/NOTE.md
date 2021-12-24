@@ -56,10 +56,10 @@ Below is a JSON formatted example of a log that would be logged by the server in
 5、http://doc.rpcx.io  
 6、有没有什么办法可以在本地，调用 staging 的 内部服务？
 
-
-
 ### Pending
 1. 学一下使用 grpc 的 channelz.IsOn()
 2. grpc Service-config 设计文档， https://github.com/grpc/grpc/blob/master/doc/service_config.md
 3. 
+
+
 

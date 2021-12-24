@@ -1,4 +1,5 @@
 ### Golang 相关的各个消息队列研究
+
 1、https://tech.meituan.com/2016/07/01/mq-design.html [美团消息队列设计精要]
 解耦、最终一致性、广播、
 2、https://juejin.im/post/5cd12fa16fb9a0320b40ec32 [goim 相关文章]

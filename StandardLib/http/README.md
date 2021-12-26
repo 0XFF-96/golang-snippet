@@ -64,6 +64,10 @@ type RoundTripper interface {
 - 根本原因：
 ref: https://segmentfault.com/a/1190000020086816?utm_source=sf-similar-article
 
+- follow-up ， 会泄漏多少个 goroutine ?
+- https://github.com/lifei6671/interview-go/blob/master/question/q021.md 。 
+
+
 综上分析，可以发现，readLoop和 writeLoop 两个goroutine在 写入请求并获取response返回后，
 并没有跳出for循环，而继续阻塞在 下一次for循环的select 语句里面，
 所以，两个函数所在的goroutine并没有运行结束，

@@ -23,3 +23,6 @@
 5、如何安全低给小表加字段？关于 MDL 锁 。  ALTER TABLE xxx NOWAIT ADD COLUMN 
 6、mysql 如何构造一个 “ 数据无法修改” 的相关场景？
 
+
+	
+	

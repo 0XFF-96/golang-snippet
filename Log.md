@@ -24,3 +24,4 @@
 - 欧神的个人代码仓库: https://github.com/changkun/pkg
 - 用 go 语言实现的推荐系统框架 https://github.com/zhenghaoz/gorse
 - 增加 etcd/raft 的相关实现
+- 重新整理整个项目的相关结构

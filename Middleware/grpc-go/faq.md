@@ -15,3 +15,10 @@
 2、https://www.practicalnetworking.net/series/packet-traveling/packet-traveling/ 【网络】
 
 
+### grpc 处理请求源码
+
+1、grpc 每调用一次，都会用一个协程处理
+2、在协程里面开启协程，如果没有保护的话，你后面的操作就可能遇到 context cancel 的报错，从而导致事件发送不成功。 
+3、event_center 的相关依赖问题。是怎么进行调用的？
+4、追踪一下 grpc 的源码的调用过程。 
+

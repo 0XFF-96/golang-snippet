@@ -31,6 +31,20 @@
 帮助我们能够重新当时情况，并且不依赖其他外部资料的情况下， 重新进入当时讨论中。
 
 
+### 基础组件和概念
+
+1、控制面板： Kubernetes Api, Scheduler 调度应用、Controller Manager 集群级别功能
+2、 工作节点：docker、kubelet、kube-proxy （负责组件之间的负载均衡网络流量）
+3、k8s 将整个数据中心暴露为用于运行应用程序的单个计算资源
+4、自动出来故障节点。 5、kubectl get pods -o wide 
+6、为 kubectl 命令行供给设置别名和 tab 补全。
+
+quota: 
+笔者不喜欢先解释事物是如何工作 的，然后再解释它的功能并教人们如何使用它 。 就像学习开车，你不想知道引擎盖 下是什么，你首先想要 学习怎样从 A 点开到 B 点 。只有在 你学会了如何做到这 一 点 后，你才会对汽车如何使这成为可能产生兴趣。毕竟，知道引擎盖 下面是什么，可 
+能在有一天它抛锚后你被困在路边时，会帮助你让车再次移动 
+
+
+
 ### Resource 
 1. k8s 基本配置。 Alias https://www.huweihuang.com/kubernetes-notes/operation/kubectl-alias.html
 

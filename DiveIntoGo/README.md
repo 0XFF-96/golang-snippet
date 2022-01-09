@@ -21,3 +21,10 @@
 19. [x] [Semaphore](semaphore.md)
 20. [x] [Memory Barrier](memory_barrier.md)
 21. [ ] [Lock Free](lockfree.md)
+
+(👆上面来自于曹大的📒)
+
+### golang 基础库的使用
+
+1. https://github.com/0voice/Introduction-to-Golang/blob/main/Go%E8%87%AA%E5%B8%A6%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md
+2. 

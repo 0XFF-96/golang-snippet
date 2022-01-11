@@ -1,4 +1,5 @@
 ### Watch Ch  设计
+
 from: config-center 
  valueChs 的作用，用于广播信号。
 ```
@@ -82,7 +83,6 @@ type cmd struct {
 需要 ch <- struct{}{}。
 另外，还要考虑到某些失败的情况，是否需要将配额还回 ch
 
-
 - redigo: Get() 连接池，是如何实现一下功能的？
 	// If Wait is true and the pool is at the MaxActive limit, then Get() waits
 	// for a connection to be returned to the pool before returning.
@@ -101,7 +101,7 @@ type cmd struct {
 				return nil, ctx.Err()
 			}
 		}
-		if wait {
+		if wait {}
 		
 ```
 

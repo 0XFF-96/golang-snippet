@@ -1,6 +1,6 @@
 ### 面试经历网站
 
-1. 五面字节： https://leetcode-cn.com/circle/discuss/A0YstA/ 
+1. https://leetcode-cn.com/circle/discuss/A0YstA/ [bytedance] 
 2. https://learnku.com/articles/49231 
 4. https://gocn.vip/topics/10926 [实习面经历]
 5. https://www.kanzhun.com/msh/?ka=click_top_tab_interview [看准]

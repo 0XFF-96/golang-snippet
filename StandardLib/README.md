@@ -1,20 +1,22 @@
-### Processing
-- context 包（还可以从哪些地方进行挖掘？）
-- flag 包
+# golang 基础库源码阅读笔记和练习代码
 
-### 规律总结
+### 重点关注的基础库
+- context 
+- sync 
+- map 和 interface 
+- http 
+- error 库
+
+### 总结
 总结一下看 【阅读 go 源码库的相关规律】
 1、为什么需要阅读这个库？这个库，在你日常生活中使用频率有多高？阅读完这个库之后，能带给你怎么样的收益？
 2、基本使用
-3、学会看测试用例，这些测试用例分别是测试哪些逻辑？
+3、学会看测试用例，这些测试用例分别是测试哪些逻辑？跑单元测试
 4、从 Go 源码中，git checkout 一下这部分的代码？看看经过了哪些方面的变迁？有没有重大 bug 
 5、你从这个库学到了什么？ 你在哪里看到其他地方有使用这个库？ 这个库的难点？
 
-
 ### 如何阅读源码
-
-1、怎么单独 checkout / download 一个分支出来。 
-将一个分支作为一个 repo 单独下载，然后看他之前的改动， 改了几个版本？
+1、怎么单独 checkout / download 一个分支出来。 将一个分支作为一个 repo 单独下载，然后看他之前的改动， 改了几个版本？
 2、https://go-review.googlesource.com/c/go/+/331389
 3、project owner guide , https://gerrit-review.googlesource.com/Documentation/intro-project-owner.html#project-owner 。
   4、https://jingwei.link/2020/03/15/contribute_golang_process.html 5、https://go-review.googlesource.com/admin/repos/net 。 看这个示范例子， 终于找到这个仓库的项目代码是如何被 contruct 和 组织。 能够单独下载 net 源码包，并且看这些包，历史的变化 commit change , 而非一大坨其他不相关的源码。 

@@ -1,5 +1,3 @@
-
-
 ### 学习笔记
 1、如何抽象 msyql 库 （ go-common , daycam ) 
 2、一条 sql 是如何被执行的 ？

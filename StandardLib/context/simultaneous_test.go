@@ -10,6 +10,7 @@ import (
 
 // 这个例子
 // 针对如何对并发函数进行测试，有很大的启发作用
+// tags: #并发测试
 func TestSimultaneous(t *testing.T) {
 	root, cancel := context.WithCancel(context.Background())
 	m := map[context.Context]context.CancelFunc{root: cancel}
@@ -43,6 +44,8 @@ func TestSimultaneous(t *testing.T) {
 			t.Fatalf("timed out waiting for <-ctx.Done(); stacks:\n%s", buf[:n])
 		}
 	}
+
+	// 无缓冲 channel
 	// Wait for all the cancel functions to return.
 	done := make(chan struct{})
 	go func() {
@@ -82,7 +85,6 @@ func TestInterlockedCancels(t *testing.T) {
 	}
 }
 
-// TODO:@Me
 // 后续把这部分代码，移动到专门学习 Channel 的地方去。
 // 参考文章: https://colobu.com/2016/04/14/Golang-Channels/
 func TestCloseCh(t *testing.T) {

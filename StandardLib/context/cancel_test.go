@@ -16,8 +16,7 @@ type otherContext struct {
 	context.Context
 }
 
-// 理解这段代码
-// 对于 golang 的 context 是如何被 cancel 会有很大的帮助！
+// 对于 golang 的 context 是如何被 cancel 会有很大的帮助
 func TestContextCancel(t *testing.T) {
 	c1, cancel := context.WithCancel(context.Background())
 
@@ -100,8 +99,6 @@ func TestParentFinishesChild(t *testing.T) {
 	//	err      error                 // set to non-nil by the first cancel call
 	//}
 	//// The parent's children should contain the two cancelable children.
-	// 因为有些数据结构不导出，所以省略...
-	//
 }
 
 func panic(w http.ResponseWriter, r *http.Request) {

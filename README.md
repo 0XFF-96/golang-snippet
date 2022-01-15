@@ -1,18 +1,18 @@
 # golang-snippet
 This is the repo that I used for store my practice code. 
-Most of the code here are inspired by different repos that you can find reference inside every sigle dir.
+Most of the code here are inspired by different repos that you can find reference inside every single dir.
 
-### RESOURCE
-- Udacity:https://github.com/mikesprague/udacity-nanodegrees
-- 参考这位老哥写的，后台组件学习与研究。 https://github.com/feixiao/service
-- 标准库源码阅读计划 https://juejin.im/post/6844903926098034696
-- 数据结构和 golang 基本知识： https://github.com/KeKe-Li/data-structures-questions 
+### 目前
+
+- 个人代码练习仓库
+- 收集一些 golang 项目常用的代码技巧
+- 源码模仿学习
 
 ### 阅读源码的技巧
 - 1、https://www.codedump.info/post/20190324-how-to-read-code/
 - 2、https://www.zhihu.com/question/19625320 
 - 3、https://www.jianshu.com/p/1f1513c08092
-- 4、博客https://github.com/Chasiny/Blog/tree/master/blog/go
+- 4、https://github.com/Chasiny/Blog/tree/master/blog/go
 
 ### Ref
 
@@ -37,3 +37,11 @@ Most of the code here are inspired by different repos that you can find referenc
 10、https://github.com/kdn251/interviews
 
 11、remote https://github.com/remoteintech/remote-jobs
+
+12、 https://github.com/mikesprague/udacity-nanodegrees
+
+13、 参考这位老哥写的，后台组件学习与研究。 https://github.com/feixiao/service
+
+14、 标准库源码阅读计划 https://juejin.im/post/6844903926098034696
+
+15、 数据结构和 golang 基本知识： https://github.com/KeKe-Li/data-structures-questions 

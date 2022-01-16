@@ -21,6 +21,7 @@
 - 云原生开发工程师： https://blog.tianfeiyu.com/about/ (主要是云原生方向) 
 - bytedance 工程师： https://blog.betacat.io/post/2020/08/how-to-mount-etcd-as-a-filesystem/
 - unknow, https://drmingdrmer.github.io/tech/bla/2018/08/26/programmer-should-know.html 
+- 机器学习方向的工程师, https://mengepeng.com/about/
 
 #### UNKNOWN
 - http://xiaorui.cc/ https://github.com/rfyiamcool

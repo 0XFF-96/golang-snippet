@@ -28,16 +28,13 @@
     - repeat 函数的相关写法 
     - Little's Law， 如何衡量一个 queue 的质量
 
-
 ### 结论 and Prompts 
  - 	wg.Add(1) 一定要发送在 goroutine 之外，避免调用时机的不确定引起
- - 
 
 ### Must-to-Read 
 - https://en.wikipedia.org/wiki/Little%27s_law  [设计消息队列时，需要考虑的问题]
 - https://www.youtube.com/watch?v=hqaSbAykV_Y
 - https://www.process.st/littles-law/
-
 
 ### 有趣的文章
 http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/

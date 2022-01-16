@@ -16,6 +16,10 @@ https://golang.org/doc/codewalk/sharemem/
 3. https://talks.golang.org/2012/concurrency.slide#57
 4. http://www.singchia.com/2018/01/29/Concurrency-Patterns-Summary-And-Implementation/
 
+### 场景
+1. 当我们在考虑并发需求的时候，我们需要注意哪些限制？
+2. 当我们使用 channel 的时候，应该如何抽象我们的业务需求，让它符合我们某个特定使用 channel 的模式？
+
 
 ### 常见的 concurrency pattern 
 1. https://github.com/lotusirous/go-concurrency-patterns

@@ -76,3 +76,8 @@
 
 
 1、https://medium.com/@mo_keefe/a-kubernetes-development-workflow-for-macos-8c41669a4518
+
+### K8s 交付流程
+
+1、 http://victorfengming.gitee.io/kubernetes/52_Kubernetes%E4%B8%AD%E7%9A%84CRI/#kubernetes%E4%B8%AD%E7%9A%84cri 
+

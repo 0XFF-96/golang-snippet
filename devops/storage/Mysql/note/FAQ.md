@@ -30,5 +30,11 @@ safe update 语句，作为相应的相知
 2、_ "http://github.com/go-sql-driver/mysql" 3、"database/sql"  4、上面这几个库有什么关系？
 
 
+### Clustered Index 主键索引和非主键索引的区别
+
+1、聚簇索引和非聚簇索引区别？聚簇索引与非聚簇索引的区别是：叶子节点是否存放一整行记录。如果没有的话，
+    可能需要【回表】操作，去聚簇索引树上面，拿记录。
+ 2、松散索引扫描？https://blog.csdn.net/zm2714/article/details/7887093 
+3、go 组件学习， https://mp.weixin.qq.com/s/-2T9BovG8TG32DQKn93LaA 
 
  

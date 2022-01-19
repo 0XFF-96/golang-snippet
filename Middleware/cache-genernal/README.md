@@ -76,6 +76,11 @@ https://coolshell.cn/articles/17416.html 【更新的策略】
 一、golang基于redis和机器内存的多级缓存设计。 
 二、各种常见缓存类型： CDN 缓存、本地缓存等：https://learnku.com/articles/42357
 
+### 缓存优化策略
+
+1、https://tech.meituan.com/2016/12/02/performance-tunning.html  经常需要在代码中控制， gorountine 的生成。
+2、goroutine 的并发控制。 worker 模式 。
+
 
 ### to-read 
 1. https://dev.to/douglasmakey/how-bigcache-avoids-expensive-gc-cycles-and-speeds-up-concurrent-access-in-go-12bb

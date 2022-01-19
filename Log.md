@@ -18,10 +18,11 @@
 - pkg/process -> go-zero/proc 统一的 signal 和 graceful stop down 管理器
 - pkg/notify -> grafana notify 系统设计
 - DiveIntoGo/MockStandardLib: mock 一遍基础库的相关代码。
-- FrameWork/k8s client go 源码阅读
+- FrameWork/k8s client go 源码阅读！
 - 增加 operation 目录，用于记录一些运维操作 Or 部署一些组件的操作
 - 内存 Cron job 的框架 https://github.com/robfig/cron
 - 欧神的个人代码仓库: https://github.com/changkun/pkg
 - 用 go 语言实现的推荐系统框架 https://github.com/zhenghaoz/gorse
 - 增加 etcd/raft 的相关实现
 - 重新整理整个项目的相关结构
+- 优化 Goland + ideaVim 的工作使用流程，提高一些敲代码的效率

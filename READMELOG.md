@@ -24,12 +24,10 @@ Note: http、rpc, 以及第三方的 redigo, go-sql-driver 是开发一个服务
 18. golang 满血补给包 https://github.com/0voice/Introduction-to-Golang 
 19. 如何阅读源码？https://www.codedump.info/post/20200605-how-to-read-code-v2020/
 20. go-mirco 的连接池实现， https://github.com/asim/go-micro/blob/94bd1025a64eaaba1d89189891ef49f3ab5eee7f/util/pool/default.go 。 
+
 ### 关于微服务
 1.  
-
 
 ### 关于产品
 1. 认知偏差知识手册[from-bytedance] https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf#
 近年来看到过的最好的产品方案指导指南。 
-
-2.

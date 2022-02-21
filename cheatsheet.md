@@ -39,14 +39,23 @@ Golang中http包中处理 HTTP 请求主要跟两个东西相关：ServeMux 和 
 
 ### Golang 资源
 
- 这里面收集的一些问题是，每次迭代学习 go 的时候，都需要重新学习和重新回答一遍的。因为每次学到新的知识点的时候，  曹大的 golang-notes、Introduction-to-Golang 项目、饶大的 go 相关源码、  faq  1、深入理解 go map ，从设计和实现上。  2、从源码角度，看 golang 的调度机制
+ 这里面收集的一些问题是，每次迭代学习 go 的时候，都需要重新学习和重新回答一遍的。
+因为每次学到新的知识点的时候，  曹大的 golang-notes、
+Introduction-to-Golang 项目、饶大的 go 相关源码、  
+  
+[FAQ]
+
+1、深入理解 go map ，从设计和实现上。
+  2、从源码角度，看 golang 的调度机制
 3、go 程序是怎么跑起来
 4、go 语言的内存管理。  Go内存分配器中mspan的表示形式、mcache、 Go中P，mcache和mspan之间的关系。  
 5、go 语言的垃圾回收机制
 6、go 语言之 gorountine 协程
 7、go heap 源码
 8、go sync 的设计与实现 
-资源
+
+【资源】
+
 1、https://blog.csdn.net/qq_35976351/article/details/104602154 。 Golang的GC和内存逃逸
  2、quick-note, http://github.com/KeKe-Li/data-structures-questions/blob/master/src/chapter05/golang.01.md 。  
 3、绕全成，关于 interface 的解析。 [www.cnblogs.com/qcrao-2018/p/10766091.html](https://www.cnblogs.com/qcrao-2018/p/10766091.html) 【interface 】 

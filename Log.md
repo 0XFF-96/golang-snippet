@@ -8,7 +8,7 @@
 - 增加 snippet 文件目录，收集日常觉得惊艳的代码片段。
 - 斗鱼开源框架 juno
 - middleware/cache-general/bigcache 内存缓存框架分析
-- StandardLib/binary 编程编码的原理和实现分析 varint。什么是 x080 ? 
+- StandardLib/binary 编码的原理和实现分析 varint。什么是 x080 ? 
 - 错误处理原则
 - middleware/grpc-go 的相关源码阅读
 - StandardLib/recover, recover 原理。

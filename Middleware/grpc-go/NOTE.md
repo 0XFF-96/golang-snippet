@@ -43,7 +43,7 @@ For that use ReplaceGrpcLogger.
 Server Interceptor
 Below is a JSON formatted example of a log that would be logged by the server interceptor:
 
-这个是从哪里来的 ？ log_peer.address:172.20.0.129:37320， 
+这个是从哪里来的 ？log_peer.address:172.20.0.129:37320， 
 
 是啥意思？peer.address 对等地址。 
 
@@ -51,9 +51,9 @@ Below is a JSON formatted example of a log that would be logged by the server in
 
 1、为什么使用 serviceName:port , 能够连通其他的服务。 这是什么原理？
 2、为什么 127.0.0.1:port, 这一种联通方式同样 ok ？
-3、GetEndPoint()   
+3、GetEndPoint() 
 4、name resolution , https://github.com/grpc/grpc/blob/master/doc/naming.md 。 
-5、http://doc.rpcx.io  
+5、http://doc.rpcx.io 
 6、有没有什么办法可以在本地，调用 staging 的 内部服务？
 
 ### Pending

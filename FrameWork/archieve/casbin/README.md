@@ -11,3 +11,9 @@
 ### 使用 casbin 设计的
 1. https://github.com/HaoweiCh/go-casbin-http-authrozation
 2. 
+
+### Reading log 
+
+1、 http://arthurchiao.art/blog/rbac-as-it-meant-to-be-zh/ [五🌟]
+基于角色的访问控制（RBAC）：演进历史、设计理念及简洁实现（Tailscale, 2021）
+

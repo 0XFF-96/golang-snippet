@@ -26,11 +26,11 @@
 1、怎么单独 checkout / download 一个分支出来。 将一个分支作为一个 repo 单独下载，然后看他之前的改动， 改了几个版本？
 2、https://go-review.googlesource.com/c/go/+/331389
 3、project owner guide , https://gerrit-review.googlesource.com/Documentation/intro-project-owner.html#project-owner 。
-  4、https://jingwei.link/2020/03/15/contribute_golang_process.html 5、https://go-review.googlesource.com/admin/repos/net 。 看这个示范例子， 终于找到这个仓库的项目代码是如何被 contruct 和 组织。 能够单独下载 net 源码包，并且看这些包，历史的变化 commit change , 而非一大坨其他不相关的源码。 
+4、https://jingwei.link/2020/03/15/contribute_golang_process.html5、https://go-review.googlesource.com/admin/repos/net 。 看这个示范例子， 终于找到这个仓库的项目代码是如何被 contruct 和 组织。 能够单独下载 net 源码包，并且看这些包，历史的变化 commit change , 而非一大坨其他不相关的源码。 
 6、https://go-review.googlesource.com/admin/repos 
-【从这些 repo 中找到 】  
+【从这些 repo 中找到 】
 7、简单的需求， 我想找到  [src](https://go.googlesource.com/go/+/refs/tags/go1.16.5/src) / [database](https://go.googlesource.com/go/+/refs/tags/go1.16.5/src/database?autodive=0) / sql ，将这个目录当作一个 git repo 下载下来， 然后看到这个目录下面的历史 changelog 和其他人曾经提交过的代码变化。 
-8、contribute guide, https://golang.org/doc/contribute 。   
+8、contribute guide, https://golang.org/doc/contribute 。 
 9、理清数据结构之间的依赖关系，最好能够画出图来。 （先不要去管行为、方法） 能够将数据结构可视化。
 10、https://www.codedump.info/post/20200605-how-to-read-code-v2020/
 

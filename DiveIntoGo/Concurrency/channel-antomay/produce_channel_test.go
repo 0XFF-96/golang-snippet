@@ -24,5 +24,6 @@ func TestReceiveChan(t *testing.T) {
 		fmt.Println(val)
 	}
 
+	// time.After()
 	fmt.Println("main() stopped")
 }

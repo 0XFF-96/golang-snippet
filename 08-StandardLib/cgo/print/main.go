@@ -21,10 +21,9 @@ func PrintV2(s string) {
 	C.fputs(cs, (*C.FILE)(C.stdout))
 }
 
-
 // 看看这里奇怪的 build 信息💻
-// /Users/lijinrui/go/go1.13.5/bin/go build -o /private/var/folders/09/r6f6jypj0f9bj7rz2qpv6jyr0000gn/T/___go_build_main_go__1_ /Users/lijinrui/golang-Snippet/StandardLib/cgo/print/mapreduce.go.bak #gosetup
-func main(){
+// /Users/lijinrui/go/go1.13.5/bin/go build -o /private/var/folders/09/r6f6jypj0f9bj7rz2qpv6jyr0000gn/T/___go_build_main_go__1_ /Users/lijinrui/golang-07-Snippet/08-StandardLib/cgo/print/mapreduce.go.bak #gosetup
+func main() {
 	Print("234")
 
 }

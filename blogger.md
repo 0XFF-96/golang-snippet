@@ -24,6 +24,7 @@
 - 机器学习方向的工程师, https://mengepeng.com/about/
 - 在德国的一个工程师，博客写得不错。https://sichengingermay.com/wo-suo-jing-li-de-ou-mei-ke-ji-gong-si-de-mian-shi/ 
 - Dave channey 老师, https://dave.cheney.net/practical-go/presentations/qcon-china.html
+- 白宦成 Do things like hackers and try to make the world a better place https://www.ixiqin.com/2020/06/07/some-good-writing-template/ 。 
 
 
 #### UNKNOWN

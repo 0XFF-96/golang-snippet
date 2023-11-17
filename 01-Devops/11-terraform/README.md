@@ -51,6 +51,12 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
     
     ```
 
+3. 卡住在 EC2 不能连接外网的问题上了。 
+    1. https://repost.aws/knowledge-center/ec2-connect-internet-gateway
+    2. Why can't my Amazon EC2 instance connect to the internet using an internet gateway?
+
+    
+
 ### 资源
 
 1. https://www.pulumi.com/ pulumi 之间有什么关系

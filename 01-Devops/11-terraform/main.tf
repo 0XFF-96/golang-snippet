@@ -16,6 +16,8 @@ variable avail_zone {}
 variable subnet_cidr_block {}
 variable env_prefix {}
 variable my_ip {}
+variable instance_type{}
+variable public_key_location{}
 
 resource "aws_vpc" "myapp-vpc" {
     // cidr_block = "10.0.0.0/16"
@@ -118,7 +120,10 @@ resource "aws_security_group" "myapp-sg" {
         from_port = 0
         to_port = 0
         protocol = "-1"
-        cidr_blocks = []
+
+        // 可能是漏了这个配置
+        // 1. 导致没有运行所有规则出站
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     tags = {
@@ -150,7 +155,8 @@ resource "aws_security_group" "myapp-sg" {
 
     egress {
 
-        // nay trafic
+        // 这条规则好像没有生效果
+        // any trafic
         from_port = 0
         to_port = 0
         protocol = "-1"
@@ -167,6 +173,122 @@ resource "aws_security_group" "myapp-sg" {
 // Amazon Linux 
 
 
-resource "aws_instance" "myapp-server" {
-    ami = ""
+// Query date from amazon !~
+data "aws_ami" "latest-amazon-linux-image" {
+    most_recent = true 
+    owners = ["amazon"]
+    filter {
+        name = "name"
+        values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+    }
+
+    filter {
+        name = "virtualization-type"
+        values = ["hvm"]
+    }
 }
+
+// output 命令用于 debug 的
+output "aws_ami_id" {
+    value = data.aws_ami.latest-amazon-linux-image
+}
+
+# // set ami dynamically 
+resource "aws_instance" "myapp-server" {
+    ami = data.aws_ami.latest-amazon-linux-image.id 
+    instance_type = var.instance_type
+
+    subnet_id = aws_subnet.myapp-subnet-1.id
+    vpc_security_group_ids = [aws_security_group.default-sg.id]
+    availability_zone = var.avail_zone
+    
+    associate_public_ip_address = true 
+    // key_name = "server-key-pair"
+    key_name = aws_key_pair.ssh-key.key_name
+
+    # user_data = <<EOF 
+    #                 #!/bin/bash
+    #                 sudo yum update -y && sudo yum install -y docker 
+    #                 sudo systemctl start docker 
+    #                 sudo usermod -aG docker ec2-user 
+    #                 docker run -p 8080:80 nginx 
+    #             EOF
+
+    user_data = <<EOF
+#!/bin/bash
+echo "Hello, World!"
+EOF
+
+  # Other arguments or blocks...
+
+    tags = {
+        Name = "${var.env_prefix}-server"
+    }
+}
+
+// create EC2 type 
+// 1. create key pair 
+//    AWS rejects ssh request, if permission not set correctly !~ 
+// 2. 
+
+
+// private ip address: ec2-user@ip-10-0-10-130 ~
+// 
+// Do Not check this into your git repo
+// a key pair must already exists locally on your machine
+resource "aws_key_pair" "ssh-key" {
+    key_name = "server-key"
+    
+   // public_key = "${file(var.public_key_location)}"
+   public_key = file(var.public_key_location)
+}
+
+
+//  aws_instance.myapp-server must be replaced
+// instance need to be replace
+
+output "ec2_public_ip" {
+    value = aws_instance.myapp-server.public_ip
+}
+
+//  ssh -i ~/.ssh/ssh-github-v2 ec2-user@35.180.251.173
+// Automate as many as possible 
+// 1. you may forget components, when it's time to clean up 
+// 2. environment replication 
+// 3. you have to document everything or remember ~ 
+// 
+// 
+
+// P23 
+// Configure EC2 server to run entryoint script 
+// to start Docker contianer 
+// 
+
+// 1. EC2 Server running!
+// 2. Networking configured!
+
+// we want to automate this configuration too!
+// 
+// 
+// 
+// 
+
+
+// Terraform 本身不提供直接的命令来检查 EC2 实例是否能够连接外网。
+// 但是，你可以使用 Terraform 输出（output）来显示相关的配置信息，然后手动检查这些配置是否满足连接外网的条件。
+# output "route_table" {
+#   value = aws_route_table.main.id
+# }
+
+# output "internet_gateway" {
+#   value = aws_internet_gateway.main.id
+# }
+
+# output "security_group" {
+#   value = aws_security_group.main.id
+# }
+
+# output "network_acl" {
+#   value = aws_network_acl.main.id
+# }
+

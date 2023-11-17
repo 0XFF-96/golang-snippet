@@ -74,3 +74,8 @@ config_local/*
 
 # tf variable files, may include sensitive data 
 *.tfvars
+*terraform.lock.hcl
+.terraform/*
+.terraform/providers/*
+.terraform/*
+terraform-provider-aws_v5.26.0_x5

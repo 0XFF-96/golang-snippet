@@ -35,3 +35,27 @@ resource "aws_subnet" "myapp-subnet-1" {
         Name: "${var.env_prefix}-subnet-1"
     }
 }
+
+// 1. 
+// Terraform knows 
+// in which sequence the components must be created 
+// 2. 
+// 3. 
+// 4.
+resource "aws_internet_gateway" "myapp-igw" {
+    vpc_id = aws_vpc.myapp-vpc.id 
+}
+
+
+resource "aws_route_table" "myapp-route-table" {
+    vpc_id = aws_vpc.myapp-vpc.id 
+
+    route {
+        cidr_block = "0.0.0.0/0"
+        gateway_id = aws_internet_gateway.myapp-igw.id 
+    }
+
+    tags = {
+        Name "${var.env_prefix}-igw"
+    }
+}

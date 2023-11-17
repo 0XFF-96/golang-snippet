@@ -66,7 +66,7 @@ config_local/*
 
 
 # ignore terraform files 
-.terrform/*
+.terraform/*
 
 # tf state files
 *.tfstate
@@ -74,4 +74,3 @@ config_local/*
 
 # tf variable files, may include sensitive data 
 *.tfvars
-

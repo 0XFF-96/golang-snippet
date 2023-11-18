@@ -160,7 +160,8 @@ resource "aws_security_group" "myapp-sg" {
         from_port = 0
         to_port = 0
         protocol = "-1"
-        cidr_blocks = []
+        // cidr_blocks = []
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     tags = {
@@ -214,15 +215,50 @@ resource "aws_instance" "myapp-server" {
     #                 docker run -p 8080:80 nginx 
     #             EOF
 
-    user_data = <<EOF
-#!/bin/bash
-echo "Hello, World!"
-EOF
+# 感觉不太行
+#     user_data = <<EOF
+# #!/bin/bash
+# echo "Hello, World!"
+# EOF
 
   # Other arguments or blocks...
 
     tags = {
         Name = "${var.env_prefix}-server"
+    }
+}
+
+# // set ami dynamically 
+resource "aws_instance" "myapp-server-v2" {
+    ami = data.aws_ami.latest-amazon-linux-image.id 
+    instance_type = var.instance_type
+
+    subnet_id = aws_subnet.myapp-subnet-1.id
+    vpc_security_group_ids = [aws_security_group.default-sg.id]
+    availability_zone = var.avail_zone
+    
+    associate_public_ip_address = true 
+    // key_name = "server-key-pair"
+    key_name = aws_key_pair.ssh-key.key_name
+
+    # user_data = <<EOF 
+    #                 #!/bin/bash
+    #                 sudo yum update -y && sudo yum install -y docker 
+    #                 sudo systemctl start docker 
+    #                 sudo usermod -aG docker ec2-user 
+    #                 docker run -p 8080:80 nginx 
+    #             EOF
+
+# 感觉不太行
+#     user_data = <<EOF
+# #!/bin/bash
+# echo "Hello, World!"
+# EOF
+
+  # Other arguments or blocks...
+
+    tags = {
+        Name = "${var.env_prefix}-serverv2"
     }
 }
 

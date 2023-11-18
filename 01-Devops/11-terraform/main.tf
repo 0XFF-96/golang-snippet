@@ -153,7 +153,11 @@ resource "aws_security_group" "myapp-sg" {
 
         // you don't have to hard code here 
         // if your ip is dynamic 
-        cidr_blocks = [var.my_ip]
+        // cidr_blocks = [var.my_ip]
+
+        // 1. Case Study 
+        // 实际上这个很危险⚠️，不应该这样做
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     egress {
@@ -219,10 +223,7 @@ resource "aws_instance" "myapp-server" {
     #             EOF
 
 # 感觉不太行
-#     user_data = <<EOF
-# #!/bin/bash
-# echo "Hello, World!"
-# EOF
+    user_data = file("entry-script.sh")
 
   # Other arguments or blocks...
 
@@ -301,3 +302,6 @@ output "ec2_public_ip" {
 // 【 疑惑 】 🤔️ 
 // 1. 在安全组中，本地 IP 地址动态变化，因此只能通过打开所有的 22 端口的流程进行。 
 // 2. 奇怪的是，为什么在 SSH 中没有相关规定？
+// 3. 为什么又-又-又，不行了。直接连接不上。
+// 4. 本地终端连接外网又问题，导致的～
+

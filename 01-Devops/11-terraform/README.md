@@ -61,3 +61,5 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 
 1. https://www.pulumi.com/ pulumi 之间有什么关系
 2. 课程资源，https://gitlab.com/nanuchi/udemy-terraform-learn
+3. 课程资源在不通的分支上，https://gitlab.com/nanuchi/terraform-learn/-/blob/feature/deploy-to-ec2-default-components/main.tf?ref_type=heads 。 
+4. 

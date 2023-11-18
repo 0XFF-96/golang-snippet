@@ -160,6 +160,16 @@ resource "aws_security_group" "myapp-sg" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
+
+    // 打开 8080 端口
+    ingress {
+        from_port = 8080
+        to_port = 8080
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+
     egress {
 
         // 这条规则好像没有生效果
@@ -222,6 +232,7 @@ resource "aws_instance" "myapp-server" {
     #                 docker run -p 8080:80 nginx 
     #             EOF
 
+# 硬是需要加一个 sudo command line 才能够剩下
 # 感觉不太行
     user_data = file("entry-script.sh")
 

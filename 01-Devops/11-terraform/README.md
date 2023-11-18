@@ -55,7 +55,9 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
     1. https://repost.aws/knowledge-center/ec2-connect-internet-gateway
     2. Why can't my Amazon EC2 instance connect to the internet using an internet gateway?
 
-    
+4. 完成 Docker 镜像的相关部署
+
+
 
 ### 资源
 

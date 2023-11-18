@@ -57,7 +57,9 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 
 4. 完成 Docker 镜像的相关部署
 
+5. provisioner, 这些命令的执行总是有问题。 在这个方面上，不如 ansible 好用 
 
+6. 
 
 ### 资源
 

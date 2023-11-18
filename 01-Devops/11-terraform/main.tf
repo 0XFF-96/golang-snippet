@@ -18,6 +18,7 @@ variable env_prefix {}
 variable my_ip {}
 variable instance_type{}
 variable public_key_location{}
+variable private_key_location{}
 
 resource "aws_vpc" "myapp-vpc" {
     // cidr_block = "10.0.0.0/16"
@@ -232,12 +233,38 @@ resource "aws_instance" "myapp-server" {
     #                 docker run -p 8080:80 nginx 
     #             EOF
 
-# 硬是需要加一个 sudo command line 才能够剩下
-# 感觉不太行
-    user_data = file("entry-script.sh")
+    # 硬是需要加一个 sudo command line 才能够剩下
+    # 感觉不太行
+    # user_data = file("entry-script.sh")
+
+
+    # 不生效
+    connection {
+        type = "ssh"
+        host = self.public_ip
+        user = "ec2-user"
+        private_key = file(var.private_key_location)
+    }
+
+    provisioner "file" {
+        source = "entry-script.sh"
+        destination = "/home/ec2-user/entry-script-on-ec2.sh"
+    }
+
+    provisioner "remote-exec" {
+        # script = file("entry-script.sh")
+        inline = [
+            "export ENV=dev",
+            "mkdir newdir"
+        ]
+    }
+
+    provisioner "local-exec" {
+        command = "echo ${self.public_ip} > output.txt"
+    }
+
 
   # Other arguments or blocks...
-
     tags = {
         Name = "${var.env_prefix}-server"
     }

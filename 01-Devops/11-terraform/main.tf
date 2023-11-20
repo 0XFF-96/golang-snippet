@@ -31,70 +31,70 @@ resource "aws_vpc" "myapp-vpc" {
     }
 }
 
-resource "aws_subnet" "myapp-subnet-1" {
-    // create a resource based on something 
-    // that haven't been created yet.
-    vpc_id = aws_vpc.myapp-vpc.id 
-    // cidr_block = "10.0.10.0/24"
-    cidr_block = var.subnet_cidr_block
-    availability_zone = var.avail_zone
-    tags = {
-        Name: "${var.env_prefix}-subnet-1"
-    }
-}
+# resource "aws_subnet" "myapp-subnet-1" {
+#     // create a resource based on something 
+#     // that haven't been created yet.
+#     vpc_id = aws_vpc.myapp-vpc.id 
+#     // cidr_block = "10.0.10.0/24"
+#     cidr_block = var.subnet_cidr_block
+#     availability_zone = var.avail_zone
+#     tags = {
+#         Name: "${var.env_prefix}-subnet-1"
+#     }
+# }
 
-// 1. 
-// Terraform knows 
-// in which sequence the components must be created 
-// 2. 
-// 3. 
-// 4.
-resource "aws_internet_gateway" "myapp-igw" {
-    vpc_id = aws_vpc.myapp-vpc.id 
+# // 1. 
+# // Terraform knows 
+# // in which sequence the components must be created 
+# // 2. 
+# // 3. 
+# // 4.
+# resource "aws_internet_gateway" "myapp-igw" {
+#     vpc_id = aws_vpc.myapp-vpc.id 
 
-    tags = {
-        Name = "${var.env_prefix}-igw"
-    }
-}
-
-
-resource "aws_route_table" "myapp-route-table" {
-    vpc_id = aws_vpc.myapp-vpc.id 
-
-    route {
-        cidr_block = "0.0.0.0/0"
-        gateway_id = aws_internet_gateway.myapp-igw.id 
-    }
-
-    tags = {
-        Name = "${var.env_prefix}-rtb"
-    }
-}
+#     tags = {
+#         Name = "${var.env_prefix}-igw"
+#     }
+# }
 
 
-resource "aws_route_table_association" "a-rtb-subnet" {
-    subnet_id = aws_subnet.myapp-subnet-1.id
-    route_table_id = aws_route_table.myapp-route-table.id
-}
+# resource "aws_route_table" "myapp-route-table" {
+#     vpc_id = aws_vpc.myapp-vpc.id 
 
-# // terraform state show -- command 
-# # resource "aws_default_route_table" "main-rtb" {
-# #     default_route_table_id = 
-# # }
+#     route {
+#         cidr_block = "0.0.0.0/0"
+#         gateway_id = aws_internet_gateway.myapp-igw.id 
+#     }
+
+#     tags = {
+#         Name = "${var.env_prefix}-rtb"
+#     }
+# }
 
 
-resource "aws_default_route_table" "main-rtb" {
-    default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id
+# resource "aws_route_table_association" "a-rtb-subnet" {
+#     subnet_id = aws_subnet.myapp-subnet-1.id
+#     route_table_id = aws_route_table.myapp-route-table.id
+# }
 
-    route {
-        cidr_block = "0.0.0.0/0"
-        gateway_id = aws_internet_gateway.myapp-igw.id 
-    }
+# # // terraform state show -- command 
+# # # resource "aws_default_route_table" "main-rtb" {
+# # #     default_route_table_id = 
+# # # }
 
-    tags = {
-        Name = "${var.env_prefix}-rtb"
-    }
-}
+
+# resource "aws_default_route_table" "main-rtb" {
+#     default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id
+
+#     route {
+#         cidr_block = "0.0.0.0/0"
+#         gateway_id = aws_internet_gateway.myapp-igw.id 
+#     }
+
+#     tags = {
+#         Name = "${var.env_prefix}-rtb"
+#     }
+# }
 
 
 // but still creating a new one is recommended in most cases
@@ -355,11 +355,14 @@ module "myapp-subnet" {
     source = "./modules/subnet"
 
     // define in two different layers 
-    subnet_cider_block = var.subnet_cider_block // come from variable tfvars 
+    subnet_cidr_block = var.subnet_cidr_block // come from variable tfvars 
     avail_zone = var.avail_zone
     env_prefix = var.env_prefix 
     vpc_id = aws_vpc.myapp-vpc.id
+
+
     default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id 
+    // aws_default_route_table = aws_default_route_table.main-rtb
 }
 
 // --------------------------------------------

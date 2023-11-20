@@ -11,14 +11,14 @@ provider "aws" {
     region = "eu-west-3"
 }
 
-variable vpc_cidr_block {}
-variable avail_zone {}
-variable subnet_cidr_block {}
-variable env_prefix {}
-variable my_ip {}
-variable instance_type{}
-variable public_key_location{}
-variable private_key_location{}
+# variable vpc_cidr_block {}
+# variable avail_zone {}
+# variable subnet_cidr_block {}
+# variable env_prefix {}
+# variable my_ip {}
+# variable instance_type{}
+# variable public_key_location{}
+# variable private_key_location{}
 
 resource "aws_vpc" "myapp-vpc" {
     // cidr_block = "10.0.0.0/16"
@@ -207,17 +207,21 @@ data "aws_ami" "latest-amazon-linux-image" {
     }
 }
 
-// output 命令用于 debug 的
-output "aws_ami_id" {
-    value = data.aws_ami.latest-amazon-linux-image
-}
+# // output 命令用于 debug 的
+# output "aws_ami_id" {
+#     value = data.aws_ami.latest-amazon-linux-image
+# }
 
 # // set ami dynamically 
 resource "aws_instance" "myapp-server" {
     ami = data.aws_ami.latest-amazon-linux-image.id 
     instance_type = var.instance_type
 
-    subnet_id = aws_subnet.myapp-subnet-1.id
+    // subnet_id = aws_subnet.myapp-subnet-1.id
+
+    // module.object_name.output_name.attribute
+    subnet_id = module.myapp-subnet.subnet.id 
+
     vpc_security_group_ids = [aws_security_group.default-sg.id]
     availability_zone = var.avail_zone
     
@@ -291,9 +295,9 @@ resource "aws_key_pair" "ssh-key" {
 //  aws_instance.myapp-server must be replaced
 // instance need to be replace
 
-output "ec2_public_ip" {
-    value = aws_instance.myapp-server.public_ip
-}
+# output "ec2_public_ip" {
+#     value = aws_instance.myapp-server.public_ip
+# }
 
 //  ssh -i ~/.ssh/ssh-github-v2 ec2-user@35.180.251.173
 // Automate as many as possible 
@@ -343,3 +347,32 @@ output "ec2_public_ip" {
 // 3. 为什么又-又-又，不行了。直接连接不上。
 // 4. 本地终端连接外网又问题，导致的～
 
+
+
+// module
+
+module "myapp-subnet" {
+    source = "./modules/subnet"
+
+    // define in two different layers 
+    subnet_cider_block = var.subnet_cider_block // come from variable tfvars 
+    avail_zone = var.avail_zone
+    env_prefix = var.env_prefix 
+    vpc_id = aws_vpc.myapp-vpc.id
+    default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id 
+}
+
+// --------------------------------------------
+// Variable Passing 
+// 1. Values are defined in .tfvars file 
+// 2. Set as values in variables.tf in root 
+// 3. Values are passed to child module as arguments 
+// 4. Via variables.tf in child module
+// --------------------------------------------
+
+
+// How do we access the resources of a child module ?
+// 1. Output Values 
+//    like return value of module 
+//    to expose/export resource attributes to parent module 
+//    

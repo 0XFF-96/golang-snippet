@@ -60,6 +60,7 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 5. provisioner, 这些命令的执行总是有问题。 在这个方面上，不如 ansible 好用 
 
 6. 学习如何将项目模块化 （ 重新复习 AWS 的工程师证书🧑‍💻）
+    6.1 Grup multiple resources into a logical unit 
 
 7. 
 

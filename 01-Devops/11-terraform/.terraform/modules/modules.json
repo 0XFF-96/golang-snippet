@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"myapp-subnet","Source":"./modules/subnet","Dir":"modules/subnet"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"myapp-subnet","Source":"./modules/subnet","Dir":"modules/subnet"},{"Key":"vpc","Source":"registry.terraform.io/terraform-aws-modules/vpc/aws","Version":"5.2.0","Dir":".terraform/modules/vpc"}]}

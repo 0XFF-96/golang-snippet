@@ -80,7 +80,23 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
         rerun this command to reinitialize your working directory. If you forget, other
         commands will detect it and remind you to do so if necessary.
 
-    
+    6.3 How do we access the resources of a child moudle ?
+
+    6.4 Our "webserver" module 
+    6.5 We learnt 
+        1. how to write a module 
+        2. how to use/reference a module
+
+
+    7.1   Configurate Remote Storage with 
+        Do you want to copy existing state to the new backend?
+        Pre-existing state was found while migrating the previous "local" backend to the
+        newly configured "s3" backend. No existing state was found in the newly
+        configured "s3" backend. Do you want to copy this state to the new "s3"
+        backend? Enter "yes" to copy and "no" to start with an empty state.
+
+        Enter a value: yes    
+
 
 ### 资源
 

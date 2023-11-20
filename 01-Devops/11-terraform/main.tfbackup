@@ -1,0 +1,381 @@
+# terraform {
+#   required_providers {
+#     aws = {
+#       source  = "hashicorp/aws"
+#       version = "~> 5.0"
+#     }
+#   }
+# }
+
+provider "aws" {
+    region = "eu-west-3"
+}
+
+# variable vpc_cidr_block {}
+# variable avail_zone {}
+# variable subnet_cidr_block {}
+# variable env_prefix {}
+# variable my_ip {}
+# variable instance_type{}
+# variable public_key_location{}
+# variable private_key_location{}
+
+resource "aws_vpc" "myapp-vpc" {
+    // cidr_block = "10.0.0.0/16"
+    cidr_block = var.vpc_cidr_block
+
+    enable_dns_support   = true  // 启用 DNS 支持
+    enable_dns_hostnames = true  // 启用 DNS 主机名
+    tags = {
+        Name: "${var.env_prefix}-vpc"
+    }
+}
+
+# resource "aws_subnet" "myapp-subnet-1" {
+#     // create a resource based on something 
+#     // that haven't been created yet.
+#     vpc_id = aws_vpc.myapp-vpc.id 
+#     // cidr_block = "10.0.10.0/24"
+#     cidr_block = var.subnet_cidr_block
+#     availability_zone = var.avail_zone
+#     tags = {
+#         Name: "${var.env_prefix}-subnet-1"
+#     }
+# }
+
+# // 1. 
+# // Terraform knows 
+# // in which sequence the components must be created 
+# // 2. 
+# // 3. 
+# // 4.
+# resource "aws_internet_gateway" "myapp-igw" {
+#     vpc_id = aws_vpc.myapp-vpc.id 
+
+#     tags = {
+#         Name = "${var.env_prefix}-igw"
+#     }
+# }
+
+
+# resource "aws_route_table" "myapp-route-table" {
+#     vpc_id = aws_vpc.myapp-vpc.id 
+
+#     route {
+#         cidr_block = "0.0.0.0/0"
+#         gateway_id = aws_internet_gateway.myapp-igw.id 
+#     }
+
+#     tags = {
+#         Name = "${var.env_prefix}-rtb"
+#     }
+# }
+
+
+# resource "aws_route_table_association" "a-rtb-subnet" {
+#     subnet_id = aws_subnet.myapp-subnet-1.id
+#     route_table_id = aws_route_table.myapp-route-table.id
+# }
+
+# # // terraform state show -- command 
+# # # resource "aws_default_route_table" "main-rtb" {
+# # #     default_route_table_id = 
+# # # }
+
+
+# resource "aws_default_route_table" "main-rtb" {
+#     default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id
+
+#     route {
+#         cidr_block = "0.0.0.0/0"
+#         gateway_id = aws_internet_gateway.myapp-igw.id 
+#     }
+
+#     tags = {
+#         Name = "${var.env_prefix}-rtb"
+#     }
+# }
+
+
+// but still creating a new one is recommended in most cases
+resource "aws_security_group" "myapp-sg" {
+    name = "myapp-sg"
+    vpc_id = aws_vpc.myapp-vpc.id
+
+
+    // what is ingress se
+    // who is allowed to access resource on port 22
+    // 
+
+    // https://whatismyipaddress.com/
+    ingress {
+        from_port = 22 
+        to_port = 22
+        protocol = "tcp"
+
+        // you don't have to hard code here 
+        // if your ip is dynamic 
+        cidr_blocks = [var.my_ip]
+    }
+
+    egress {
+
+        // nay trafic
+        from_port = 0
+        to_port = 0
+        protocol = "-1"
+
+        // 可能是漏了这个配置
+        // 1. 导致没有运行所有规则出站
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    tags = {
+        Name = "${var.env_prefix}-sg"
+    }
+}
+
+
+// Use default Security Group 
+// Instead of a old one 
+// 
+ resource "aws_security_group" "default-sg" {
+    vpc_id = aws_vpc.myapp-vpc.id
+    // what is ingress se
+    // who is allowed to access resource on port 22
+    // 
+
+
+    // https://whatismyipaddress.com/
+    ingress {
+        from_port = 22 
+        to_port = 22
+        protocol = "tcp"
+
+        // you don't have to hard code here 
+        // if your ip is dynamic 
+        // cidr_blocks = [var.my_ip]
+
+        // 1. Case Study 
+        // 实际上这个很危险⚠️，不应该这样做
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+
+    // 打开 8080 端口
+    ingress {
+        from_port = 8080
+        to_port = 8080
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+
+    egress {
+
+        // 这条规则好像没有生效果
+        // any trafic
+        from_port = 0
+        to_port = 0
+        protocol = "-1"
+        // cidr_blocks = []
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    tags = {
+        Name = "${var.env_prefix}-default-sg"
+    }
+}
+
+// Fetch Amazon Machine Image 
+// For EC2 instance 
+// Amazon Linux 
+
+
+// Query date from amazon !~
+data "aws_ami" "latest-amazon-linux-image" {
+    most_recent = true 
+    owners = ["amazon"]
+    filter {
+        name = "name"
+        values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+    }
+
+    filter {
+        name = "virtualization-type"
+        values = ["hvm"]
+    }
+}
+
+# // output 命令用于 debug 的
+# output "aws_ami_id" {
+#     value = data.aws_ami.latest-amazon-linux-image
+# }
+
+# // set ami dynamically 
+resource "aws_instance" "myapp-server" {
+    ami = data.aws_ami.latest-amazon-linux-image.id 
+    instance_type = var.instance_type
+
+    // subnet_id = aws_subnet.myapp-subnet-1.id
+
+    // module.object_name.output_name.attribute
+    subnet_id = module.myapp-subnet.subnet.id 
+
+    vpc_security_group_ids = [aws_security_group.default-sg.id]
+    availability_zone = var.avail_zone
+    
+    associate_public_ip_address = true 
+    // key_name = "server-key-pair"
+    key_name = aws_key_pair.ssh-key.key_name
+
+    # user_data = <<EOF 
+    #                 #!/bin/bash
+    #                 sudo yum update -y && sudo yum install -y docker 
+    #                 sudo systemctl start docker 
+    #                 sudo usermod -aG docker ec2-user 
+    #                 docker run -p 8080:80 nginx 
+    #             EOF
+
+    # 硬是需要加一个 sudo command line 才能够剩下
+    # 感觉不太行
+    # user_data = file("entry-script.sh")
+
+
+    # 不生效
+    connection {
+        type = "ssh"
+        host = self.public_ip
+        user = "ec2-user"
+        private_key = file(var.private_key_location)
+    }
+
+    provisioner "file" {
+        source = "entry-script.sh"
+        destination = "/home/ec2-user/entry-script-on-ec2.sh"
+    }
+
+    provisioner "remote-exec" {
+        # script = file("entry-script.sh")
+        inline = [
+            "export ENV=dev",
+            "mkdir newdir"
+        ]
+    }
+
+    provisioner "local-exec" {
+        command = "echo ${self.public_ip} > output.txt"
+    }
+
+
+  # Other arguments or blocks...
+    tags = {
+        Name = "${var.env_prefix}-server"
+    }
+}
+
+// create EC2 type 
+// 1. create key pair 
+//    AWS rejects ssh request, if permission not set correctly !~ 
+// 2. 
+
+
+// private ip address: ec2-user@ip-10-0-10-130 ~
+// 
+// Do Not check this into your git repo
+// a key pair must already exists locally on your machine
+resource "aws_key_pair" "ssh-key" {
+    key_name = "server-key"
+    
+   // public_key = "${file(var.public_key_location)}"
+   public_key = file(var.public_key_location)
+}
+
+
+//  aws_instance.myapp-server must be replaced
+// instance need to be replace
+
+# output "ec2_public_ip" {
+#     value = aws_instance.myapp-server.public_ip
+# }
+
+//  ssh -i ~/.ssh/ssh-github-v2 ec2-user@35.180.251.173
+// Automate as many as possible 
+// 1. you may forget components, when it's time to clean up 
+// 2. environment replication 
+// 3. you have to document everything or remember ~ 
+// 
+// 
+
+// P23 
+// Configure EC2 server to run entryoint script 
+// to start Docker contianer 
+// 
+
+// 1. EC2 Server running!
+// 2. Networking configured!
+
+// we want to automate this configuration too!
+// 
+// 
+// 
+// 
+
+
+// Terraform 本身不提供直接的命令来检查 EC2 实例是否能够连接外网。
+// 但是，你可以使用 Terraform 输出（output）来显示相关的配置信息，然后手动检查这些配置是否满足连接外网的条件。
+# output "route_table" {
+#   value = aws_route_table.main.id
+# }
+
+# output "internet_gateway" {
+#   value = aws_internet_gateway.main.id
+# }
+
+# output "security_group" {
+#   value = aws_security_group.main.id
+# }
+
+# output "network_acl" {
+#   value = aws_network_acl.main.id
+# }
+
+
+// 【 疑惑 】 🤔️ 
+// 1. 在安全组中，本地 IP 地址动态变化，因此只能通过打开所有的 22 端口的流程进行。 
+// 2. 奇怪的是，为什么在 SSH 中没有相关规定？
+// 3. 为什么又-又-又，不行了。直接连接不上。
+// 4. 本地终端连接外网又问题，导致的～
+
+
+
+// module
+
+module "myapp-subnet" {
+    source = "./modules/subnet"
+
+    // define in two different layers 
+    subnet_cidr_block = var.subnet_cidr_block // come from variable tfvars 
+    avail_zone = var.avail_zone
+    env_prefix = var.env_prefix 
+    vpc_id = aws_vpc.myapp-vpc.id
+
+
+    default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id 
+    // aws_default_route_table = aws_default_route_table.main-rtb
+}
+
+// --------------------------------------------
+// Variable Passing 
+// 1. Values are defined in .tfvars file 
+// 2. Set as values in variables.tf in root 
+// 3. Values are passed to child module as arguments 
+// 4. Via variables.tf in child module
+// --------------------------------------------
+
+
+// How do we access the resources of a child module ?
+// 1. Output Values 
+//    like return value of module 
+//    to expose/export resource attributes to parent module 
+//    

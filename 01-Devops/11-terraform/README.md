@@ -97,17 +97,21 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 
     Enter a value: yes    
 
-8 
+8 LB 负载均很
     8.1 使用 Terraform 配置 ALB， 连接后端实例 ～ 
     8.2 ALB 检测不出来，在控制台上面操作的 security group 的 attachment~
     8.3 有一个 listener 一直创建和附加不成功🏅️，只能另辟蹊径，额外在文件外部进行创建了
 
+9. ALB 相关
+    9.1, https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54
+
+    9.2 
 ### 资源
 
 1. https://www.pulumi.com/ pulumi 之间有什么关系
 2. 课程资源，https://gitlab.com/nanuchi/udemy-terraform-learn
 3. 课程资源在不通的分支上，https://gitlab.com/nanuchi/terraform-learn/-/blob/feature/deploy-to-ec2-default-components/main.tf?ref_type=heads 。 
-4. 
+4. 最佳实践指南，https://lonegunmanb.github.io/introduction-terraform/7.CloudPosse%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html
 
 
 ### TODO 

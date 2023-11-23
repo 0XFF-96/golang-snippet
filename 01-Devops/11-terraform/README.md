@@ -88,15 +88,19 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
         2. how to use/reference a module
 
 
-    7.1   Configurate Remote Storage with 
-        Do you want to copy existing state to the new backend?
-        Pre-existing state was found while migrating the previous "local" backend to the
-        newly configured "s3" backend. No existing state was found in the newly
-        configured "s3" backend. Do you want to copy this state to the new "s3"
-        backend? Enter "yes" to copy and "no" to start with an empty state.
+7.1   Configurate Remote Storage with 
+    Do you want to copy existing state to the new backend?
+    Pre-existing state was found while migrating the previous "local" backend to the
+    newly configured "s3" backend. No existing state was found in the newly
+    configured "s3" backend. Do you want to copy this state to the new "s3"
+    backend? Enter "yes" to copy and "no" to start with an empty state.
 
-        Enter a value: yes    
+    Enter a value: yes    
 
+8 
+    8.1 使用 Terraform 配置 ALB， 连接后端实例 ～ 
+    8.2 ALB 检测不出来，在控制台上面操作的 security group 的 attachment~
+    8.3 有一个 listener 一直创建和附加不成功🏅️，只能另辟蹊径，额外在文件外部进行创建了
 
 ### 资源
 
@@ -104,3 +108,9 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 2. 课程资源，https://gitlab.com/nanuchi/udemy-terraform-learn
 3. 课程资源在不通的分支上，https://gitlab.com/nanuchi/terraform-learn/-/blob/feature/deploy-to-ec2-default-components/main.tf?ref_type=heads 。 
 4. 
+
+
+### TODO 
+1. 增加 EFS 实例，https://registry.terraform.io/modules/terraform-aws-modules/efs/aws/latest 
+2. 增加 Ec2 实例，https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
+3. 编写利用 Terraform 学习 SAA 系列课程 

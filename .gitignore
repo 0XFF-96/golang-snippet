@@ -79,3 +79,4 @@ config_local/*
 .terraform/providers/*
 .terraform/*
 terraform-provider-aws_v5.26.0_x5
+.terraform/modules/alb/*

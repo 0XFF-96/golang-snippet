@@ -57,3 +57,4 @@ module "vpc" {
 // the laatest state data before running Terraform 
 // How do we share a same Terraform state file ?
 // 
+

@@ -35,15 +35,15 @@ resource "aws_route_table_association" "a-rtb-subnet" {
 }
 
 
-# resource "aws_default_route_table" "main-rtb" {
-#     default_route_table_id = var.default_route_table_id
+resource "aws_default_route_table" "main-rtb" {
+    default_route_table_id = var.default_route_table_id
 
-#     route {
-#         cidr_block = "0.0.0.0/0"
-#         gateway_id = aws_internet_gateway.myapp-igw.id 
-#     }
+    route {
+        cidr_block = "0.0.0.0/0"
+        gateway_id = aws_internet_gateway.myapp-igw.id 
+    }
 
-#     tags = {
-#         Name = "${var.env_prefix}-rtb"
-#     }
-# }
+    tags = {
+        Name = "${var.env_prefix}-rtb"
+    }
+}

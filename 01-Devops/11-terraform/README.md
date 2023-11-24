@@ -106,6 +106,12 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
     9.1, https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54
 
     9.2 
+
+10 RDS 数据库配置
+    10.1 文件配置
+    10.2 
+
+
 ### 资源
 
 1. https://www.pulumi.com/ pulumi 之间有什么关系

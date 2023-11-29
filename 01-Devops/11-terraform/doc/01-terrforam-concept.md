@@ -709,3 +709,4 @@ output "instance_ip_addr" {
 你可以通过运行 `terraform output instance_ip_addr` 来获取这个实例的公共 IP 地址。
 
 总的来说，`terraform output` 命令的作用是提取和显示 Terraform 配置中定义的 output 值，这些值通常包含了你的资源的重要信息。
+

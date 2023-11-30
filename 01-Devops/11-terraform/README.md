@@ -124,3 +124,5 @@ Class From Udemy: https://www.udemy.com/course/complete-terraform-course-beginne
 1. 增加 EFS 实例，https://registry.terraform.io/modules/terraform-aws-modules/efs/aws/latest 
 2. 增加 Ec2 实例，https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
 3. 编写利用 Terraform 学习 SAA 系列课程 
+
+

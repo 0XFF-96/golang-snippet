@@ -137,3 +137,14 @@ AWS 提供了多种与 LDAP 相关的服务和功能，包括 AWS Directory Serv
 4. **AWS SDKs 和工具**：AWS 提供了多种 SDKs 和工具来帮助你在应用程序中使用 AWS 的 LDAP 服务。链接：[AWS SDKs 和工具](https://aws.amazon.com/tools/)
 
 这些文档和资源可以帮助你理解和使用 AWS 的 LDAP 服务和功能。
+
+
+NACL 和 ACL，有什么区别的吗?
+
+NACL（Network Access Control List）和 ACL（Access Control List）都是用于控制网络访问权限的工具，但是它们在使用场景和功能上有一些不同。
+
+NACL：NACL 是在网络层（OSI 模型的第三层）实施的，它是一种无状态的过滤器，可以控制进入和离开子网的流量。NACL 可以设置允许或拒绝特定 IP 地址、协议或端口号的流量。NACL 是在子网级别应用的，所以在一个子网中的所有资源都会受到相同的 NACL 规则的影响。
+
+ACL：ACL 是在应用层（OSI 模型的第七层）实施的，它是一种有状态的过滤器，可以控制进入和离开特定资源的流量。ACL 可以设置允许或拒绝特定用户、角色或 IP 地址的访问请求。ACL 是在资源级别应用的，所以可以对每个资源设置不同的 ACL 规则。
+
+总的来说，NACL 和 ACL 的主要区别在于它们控制访问权限的层次和粒度。NACL 更适合于控制大范围的网络流量，而 ACL 更适合于控制对特定资源的访问。

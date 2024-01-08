@@ -9,7 +9,7 @@
 --------------------
 
 **assistant**:
-AWS的Placement Group是一种逻辑分组，用于确定EC2实例的物理位置。这种分组可以帮助用户满足特定的需求，比如低网络延迟、高网络吞吐量或者在单个故障区域内的分布。
+AWS的 Placement Group 是一种逻辑分组，用于确定EC2实例的物理位置。这种分组可以帮助用户满足特定的需求，比如低网络延迟、高网络吞吐量或者在单个故障区域内的分布。
 
 AWS提供了三种类型的Placement Group：
 
@@ -48,6 +48,7 @@ Elastic Load Balancer支持监听HTTP和HTTPS请求，以及使用TCP和SSL协�
 --------------------
 
 **assistant**:
+
 这句话的意思是，将图片存储在S3上，并直接从S3上提供（serve）给用户，而不是通过你的web应用程序层（tier）来提供。这样做的好处是可以减轻web应用程序层的负载，并且可以更有效地利用S3的高可用性和高性能。
 
 在实际应用中，当用户请求一个图片时，你的web应用程序会生成一个指向S3上该图片的URL，然后将这个URL返回给用户。用户的浏览器会直接从S3下载图片，而不需要经过你的web应用程序。
@@ -56,11 +57,11 @@ Elastic Load Balancer支持监听HTTP和HTTPS请求，以及使用TCP和SSL协�
 
 1. 减轻web服务器的负载：由于图片的提供是由S3处理的，所以web服务器可以专注于处理其他的业务逻辑，从而提高整体的性能。
 
-2. 提高可扩展性：S3可以轻松处理大量的并发请求，所以即使在用户数量大幅增长的情况下，也可以保证图片的提供速度。
+2. 提高可扩展性：S3 可以轻松处理大量的并发请求，所以即使在用户数量大幅增长的情况下，也可以保证图片的提供速度。
 
-3. 提高可用性：S3是一个高可用性的服务，即使在某个区域的服务器出现问题的情况下，也可以从其他区域的服务器提供图片。
+3. 提高可用性：S3 是一个高可用性的服务，即使在某个区域的服务器出现问题的情况下，也可以从其他区域的服务器提供图片。
 
-4. 节省成本：相比于在web服务器上存储和提供图片，使用S3通常更加经济。
+4. 节省成本：相比于在 web 服务器上存储和提供图片，使用 S3 通常更加经济。
 
 --------------------
 
@@ -74,9 +75,9 @@ AWS Cognito是一个身份服务，它提供了用户注册、登录以及访问
 
 1. **用户池（User Pools）**：用户池是一个用户目录，可以让你的应用程序的用户注册和登录。它提供了标准的用户账号系统功能，包括注册、登录、密码找回、用户验证等。用户池还支持使用第三方身份提供商（如Facebook、Google等）进行登录。
 
-2. **身份池（Identity Pools）**：身份池则是用来授权用户访问其他AWS服务的。比如，你可以通过身份池给一个用户分配一个临时的AWS凭证，然后这个用户就可以使用这个凭证访问S3、DynamoDB等AWS服务。
+2. **身份池（Identity Pools）**：身份池则是用来授权用户访问其他 AWS 服务的。比如，你可以通过身份池给一个用户分配一个临时的 AWS 凭证，然后这个用户就可以使用这个凭证访问S3、DynamoDB等AWS服务。
 
-所以，简单来说，AWS Cognito的主要作用是：
+所以，简单来说，AWS Cognito 的主要作用是：
 
 - 提供用户管理和身份验证功能，让你的应用程序的用户可以注册、登录、找回密码等。
 - 提供社交登录功能，让你的应用程序的用户可以通过Facebook、Google等第三方身份提供商登录。
@@ -90,21 +91,21 @@ AWS Directory Services 可以用来干什么？为什么需要这个服务
 --------------------
 
 **assistant**:
-AWS Directory Service是一种托管目录的服务，它可以让你在AWS上运行Microsoft Active Directory（AD）或者设置自己的云目录。这个服务主要用于集中管理和控制AWS资源的访问权限，以及在AWS和你的本地网络环境之间共享目录。
+AWS Directory Service 是一种托管目录的服务，它可以让你在AWS上运行 Microsoft Active Directory（AD）或者设置自己的云目录。这个服务主要用于集中管理和控制AWS资源的访问权限，以及在AWS和你的本地网络环境之间共享目录。
 
-以下是一些AWS Directory Service的主要用途：
+以下是一些AWS Directory Service 的主要用途：
 
-1. **集中用户和组的管理**：你可以使用AWS Directory Service来集中管理你的用户和组，包括创建、更新和删除操作。
+1. **集中用户和组的管理**：你可以使用 AWS Directory Service来集中管理你的用户和组，包括创建、更新和删除操作。
 
-2. **集中资源的访问控制**：你可以使用AWS Directory Service来控制你的用户和组对AWS资源的访问权限。
+2. **集中资源的访问控制**：你可以使用 AWS Directory Service来控制你的用户和组对 AWS 资源的访问权限。
 
-3. **单点登录（SSO）**：你可以使用AWS Directory Service来实现单点登录，让你的用户可以使用同一组凭证来访问多个应用程序和服务。
+3. **单点登录（SSO）**：你可以使用 AWS Directory Service 来实现单点登录，让你的用户可以使用同一组凭证来访问多个应用程序和服务。
 
-4. **与本地网络环境的集成**：如果你已经有了一个本地的Active Directory环境，你可以使用AWS Directory Service来将这个环境扩展到AWS，这样你就可以在AWS和本地网络环境之间共享用户、组和策略。
+4. **与本地网络环境的集成**：如果你已经有了一个本地的 Active Directory 环境，你可以使用 AWS Directory Service 来将这个环境扩展到AWS，这样你就可以在AWS和本地网络环境之间共享用户、组和策略。
 
-5. **与其他AWS服务的集成**：很多AWS服务都支持与AWS Directory Service集成，比如Amazon RDS、Amazon EC2和Amazon WorkSpaces等。
+5. **与其他AWS服务的集成**：很多 AWS 服务都支持与 AWS Directory Service集成，比如Amazon RDS、Amazon EC2 和 Amazon WorkSpaces 等。
 
-为什么需要这个服务？主要是因为在大型组织中，集中管理和控制用户和资源的访问权限是非常重要的。通过使用AWS Directory Service，你可以更容易地实现这个目标，并且可以避免自己搭建和维护一个目录服务的复杂性和成本。
+为什么需要这个服务？主要是因为在大型组织中，集中管理和控制用户和资源的访问权限是非常重要的。通过使用 AWS Directory Service，你可以更容易地实现这个目标，并且可以避免自己搭建和维护一个目录服务的复杂性和成本。
 
 --------------------
 
@@ -178,6 +179,7 @@ AWS Key Management Service (KMS) 是一种托管服务，用于创建和控制 A
 --------------------
 
 **assistant**:
+
 AWS Systems Manager (SSM) 是一项 AWS 服务，用于帮助你查看和控制你的 AWS 资源的配置。通过使用 Systems Manager，你可以对你的服务器和 VM（虚拟机）、数据库、存储和网络配置进行自动化管理和维护。
 
 以下是 AWS Systems Manager 的一些主要功能：
@@ -224,7 +226,7 @@ AWS Systems Manager (SSM) 是一项 AWS 服务，用于帮助你查看和控制�
 --------------------
 
 **assistant**:
-AWS Systems Manager（SSM）和Terraform都是强大的工具，但它们在功能和用途上有一些关键区别。
+AWS Systems Manager（SSM）和 Terraform 都是强大的工具，但它们在功能和用途上有一些关键区别。
 
 **Terraform** 是一个开源的基础设施即代码（IaC）工具，由 HashiCorp 开发。它允许开发人员使用高级配置语言（HCL）编写文件，描述他们希望的资源和服务的状态。然后 Terraform 负责创建、更新或删除资源，以达到描述的状态。Terraform 支持多个云服务提供商，包括 AWS、Google Cloud、Azure 等。
 

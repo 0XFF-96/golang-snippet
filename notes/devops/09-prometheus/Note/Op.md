@@ -14,7 +14,7 @@
 2、https://hulining.gitbook.io/prometheus/introduction/media
 3、https://erdong.site/prometheus-notes/chapter01-Basic/1.5-data-model.html
 
-### k8s and promethues 
+### k8s and prometheus 
 
 1、https://github.com/kubernetes/kube-state-metrics/tree/master/Documentation
 2、https://github.com/kubernetes/kube-state-metricsPrometheus 支持通过多个监控目标采集 Kubernetes, 
@@ -44,7 +44,7 @@ Job and instances: 1、Reference
 ### OverView 
 
 Outline:
-1、What is promethues ? features、metrics、components 
+1、What is prometheus ? features、metrics、components 
 2、What does it fit or not fit ?
 
 基本概念：
@@ -73,7 +73,7 @@ Outline:
 
 ### 资源
 
-1、hello world 的 promethues 
-2、这位老哥看过的 promethues 资源比较多， [www.bboy.app/page/2/](https://www.bboy.app/page/2/) 。 
+1、hello world 的 prometheus 
+2、这位老哥看过的 prometheus 资源比较多， [www.bboy.app/page/2/](https://www.bboy.app/page/2/) 。 
 
 

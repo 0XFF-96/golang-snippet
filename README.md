@@ -1,49 +1,48 @@
 # golang-snippet
-This is the repo that I used for store my practice code. 
-Most of the code here are inspired by different repos that you can find reference inside every single dir.
 
-### 目前
+Personal Go practice repository — code experiments, snippets, and source-reading notes.
+Most code here is inspired by other repositories; references are listed in each subdirectory.
 
-- 个人代码练习仓库
-- 收集一些 golang 项目常用的代码技巧
-- 源码模仿学习
+## Layout
 
-### 阅读源码的技巧
-- 1、https://www.codedump.info/post/20190324-how-to-read-code/
-- 2、https://www.zhihu.com/question/19625320 
-- 3、https://www.jianshu.com/p/1f1513c08092
-- 4、https://github.com/Chasiny/Blog/tree/master/blog/go
+Two-tier split: **`notes/`** for source-reading and reference material, **`code/`** for compilable Go practice.
 
-### Ref
+| Path | Purpose |
+| --- | --- |
+| [notes/devops/](notes/devops/) | Ops & infra notes (k8s, terraform, prometheus, …) |
+| [notes/go-internals/](notes/go-internals/) | Deep dives into the Go language and runtime |
+| [notes/stdlib/](notes/stdlib/) | Standard library source reading |
+| [notes/frameworks/](notes/frameworks/) | Framework source reading (etcd, go-micro, rpcx, …) |
+| [notes/middleware/](notes/middleware/) | Cache, grpc, discovery, config-center, redis, … |
+| [notes/interview/](notes/interview/) | Interview Q&A and system-design notes |
+| [code/patterns/](code/patterns/) | Design pattern implementations (`go build ./code/...`) |
+| [code/snippets/](code/snippets/) | Standalone snippets worth re-using |
+| [wip/](wip/) | Work-in-progress / unsorted (csapp, Mydocker, ultimate-go) |
+| [archive/](archive/) | Retired material kept for reference only |
 
-1、ad-java: https://github.com/doocs/advanced-java 
+See also: [RoadMap.md](RoadMap.md), [Log.md](Log.md), [cheatsheet.md](cheatsheet.md), [blogger.md](blogger.md).
 
-2、cs-course : https://github.com/ossu/computer-science 
+See also: [RoadMap.md](RoadMap.md), [Log.md](Log.md), [cheatsheet.md](cheatsheet.md), [blogger.md](blogger.md).
 
-3、http://github.com/xingshaocheng/architect-awesome/blob/master/README.md 【架构图】
+## How to read source code
 
-4、k8s -network : https://github.com/nleiva/kubernetes-networking-links
+- https://www.codedump.info/post/20190324-how-to-read-code/
+- https://www.zhihu.com/question/19625320
+- https://www.jianshu.com/p/1f1513c08092
+- https://github.com/Chasiny/Blog/tree/master/blog/go
 
-5、https://github.com/kelseyhightower/kubernetes-the-hard-way
+## References
 
-6、k8s the hard way : https://github.com/kelseyhightower/kubernetes-the-hard-way/tree/master/docs 
-
-7、https://mp.weixin.qq.com/s/iT-bURMpct7Mv2rl-MHKIg
-
-8、interview qa: https://github.com/DopplerHQ/awesome-interview-questions
-
-9、interview qa : https://github.com/jwasham/coding-interview-university 
-
-10、https://github.com/kdn251/interviews
-
-11、remote https://github.com/remoteintech/remote-jobs
-
-12、 https://github.com/mikesprague/udacity-nanodegrees
-
-13、 参考这位老哥写的，后台组件学习与研究。 https://github.com/feixiao/service
-
-14、 标准库源码阅读计划 https://juejin.im/post/6844903926098034696
-
-15、 数据结构和 golang 基本知识： https://github.com/KeKe-Li/data-structures-questions 
-
-16、test item
+- [advanced-java](https://github.com/doocs/advanced-java)
+- [computer-science (OSSU)](https://github.com/ossu/computer-science)
+- [architect-awesome](https://github.com/xingshaocheng/architect-awesome)
+- [kubernetes-networking-links](https://github.com/nleiva/kubernetes-networking-links)
+- [kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+- [awesome-interview-questions](https://github.com/DopplerHQ/awesome-interview-questions)
+- [coding-interview-university](https://github.com/jwasham/coding-interview-university)
+- [interviews](https://github.com/kdn251/interviews)
+- [remote-jobs](https://github.com/remoteintech/remote-jobs)
+- [udacity-nanodegrees](https://github.com/mikesprague/udacity-nanodegrees)
+- [feixiao/service](https://github.com/feixiao/service) — 后台组件学习与研究
+- [标准库源码阅读计划](https://juejin.im/post/6844903926098034696)
+- [data-structures-questions](https://github.com/KeKe-Li/data-structures-questions)
